@@ -5,7 +5,7 @@
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;
   --footer-pad: 10px;
-  --btn-pad: 16px 64px 16px 64px;
+  --btn-pad: 16px 34px 16px 34px;
   --bg: #f3f3f3;
   --line-footer: #aaaaaa;
   --highlight: #ffffdd;
@@ -222,7 +222,8 @@ hr {
 button.btn {
   background: none;
   border: 2px solid var(--text);
-  border-radius: 35px;
+  /*border-radius: 35px;*/
+  transition:0.5s ease-in-out;
   cursor: pointer;
   padding: var(--btn-pad);
   position: relative;
@@ -232,6 +233,13 @@ button.btn {
 
 button.btn::before {
   content: 'Archivo proyectos';
+}
+
+button.btn:hover {
+  color: var(--text);
+  border-color: var(--text);
+  box-shadow: 0 0.8em 0.5em -0.4em #5a5a5a;
+  transform: translateY(-0.35em);
 }
 
 section.hero {
