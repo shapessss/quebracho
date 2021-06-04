@@ -92,6 +92,7 @@ header {
   position: sticky;*/
   top: 0;
   width: 100vw;
+  height: 120px;
   z-index: 3;
   padding: 10px var(--global-pad);
   background-color: var(--bg);
@@ -121,18 +122,33 @@ nav.pagination {
   display: inline-grid;
 }
 
-nav.pagination a, nav.lang-nav a {
+nav.pagination a {
   font-size: var(--h4-size);
 }
 
 nav.lang-nav {
-  text-transform: uppercase;
+  font-size: var(--h4-size);
+  text-align: end;
 }
 
 nav.lang-nav a:first-child:after {
   content: "/";
   color: var(--text);
   margin-left: 5px;
+}
+
+div.lang-link a {
+  text-transform: uppercase;
+  font-size: var(--h4-size);
+}
+
+div.contact-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+div.contact-btn p {
+  margin: 0;
 }
 
 .container {
@@ -191,6 +207,33 @@ div.project-thumb p {
 div.project-thumb:hover p {
   visibility: visible;
   opacity: 1;
+}
+
+div.q-info {
+ background-color: var(--highlight);
+ height: 360px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: var(--pad); 
+}
+
+div.q-info-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text);
+}
+
+div.q-info-container img {
+  width: 100px;
+}
+
+div.q-info-container h2 {
+  width: 320px;
+  text-align: end;
+  margin-right: 20px;
 }
 
 aside.projects-cta-banner {
@@ -374,6 +417,8 @@ section.prev-next a.next {
 
 footer {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   background-color: var(--bg);
   left: 0;
   bottom: 0;
@@ -388,6 +433,7 @@ div.main-footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
   border-bottom: 1px solid var(--line-footer);
   padding-bottom: var(--footer-pad);
 }
