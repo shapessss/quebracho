@@ -141,6 +141,10 @@ nav.lang-nav a:first-child:after {
   margin-left: 5px;
 }
 
+nav.pagination, nav.lang-nav {
+  flex: 1;
+}
+
 div.lang-link a {
   text-transform: uppercase;
   font-size: var(--h4-size);
