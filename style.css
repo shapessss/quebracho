@@ -118,6 +118,10 @@ header h1 a {
   border-bottom-color: transparent;
 }
 
+img.header-logo {
+  width: 183px;
+}
+
 nav.pagination {
   display: inline-grid;
 }
