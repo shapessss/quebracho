@@ -222,6 +222,7 @@ hr {
 button.btn {
   background: none;
   border: 2px solid var(--text);
+  border-radius: 3px;
   /*border-radius: 35px;*/
   transition:0.5s ease-in-out;
   cursor: pointer;
