@@ -281,17 +281,22 @@ button.btn {
   position: relative;
   overflow: hidden;
   z-index: 200;
+  transition: transform .2s ease-in-out;
 }
 
 button.btn::before {
   content: 'Archivo proyectos';
 }
 
-button.btn:hover {
+/*button.btn:hover {
   color: var(--text);
   border-color: var(--text);
   box-shadow: 0 0.8em 0.5em -0.4em #5a5a5a;
   transform: translateY(-0.35em);
+}*/
+
+button.btn:active {
+  transform: scale(0.96);
 }
 
 section.hero {
