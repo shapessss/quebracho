@@ -69,7 +69,6 @@ body {
 div.page {
   position: relative;
   z-index: 2;
-  padding-bottom: 20px;
 }
 
 /* Selections */
@@ -192,6 +191,12 @@ div.project-thumb img {
   width: 100%;
   height: 100%;
   margin: auto;
+  transition: filter .3s ease-in-out;
+}
+
+div.project-thumb img:hover {
+  filter: brightness(85%);
+  -webkit-filter: brightness(85%);
 }
 
 div.project-thumb p {
@@ -428,6 +433,33 @@ section.prev-next a.next {
   text-align: right;
 }
 
+section.studiowork {
+  position: relative;
+  margin: 0;
+  background-color: var(--bg);
+}
+
+section.studiowork div.right {
+  float: right;
+  width: 50%;
+  padding: 0 0 20px 9px;
+  height: 600px;
+}
+
+section.studiowork div.left {
+  float: left;
+  width: 50%;
+  padding: 0 9px 20px 0;
+  height: 600px;
+}
+
+div.left img, div.right img {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
 footer {
   position: fixed;
   display: flex;
@@ -477,26 +509,3 @@ div.terms-conditions {
 div.terms-conditions h1 {
   margin-left: 20px;
 }
-
-/* Cursos styles 
-div.cursors div {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--line-footer);
-  background-color: transparent;
-  border-radius: 50%;
-  z-index: 1000;
-  pointer-events: none;
-  
-}
-
-div.cursors div:last-child {
-  background-color: var(--text);
-  width: 8px;
-  height: 8px;
-  mix-blend-mode: darken;
-}
-*/
