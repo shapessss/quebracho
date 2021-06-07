@@ -213,6 +213,11 @@ div.project-thumb:hover p {
   opacity: 1;
 }
 
+div.project-thumb sup {
+  vertical-align: top;
+  font-size: 2.5vw;
+}
+
 div.q-info {
  background-color: var(--highlight);
  height: 360px;
