@@ -92,9 +92,8 @@ header {
   position: sticky;*/
   top: 0;
   width: 100vw;
-  height: 120px;
   z-index: 3;
-  padding: 10px var(--global-pad);
+  padding: var(--h4-size) var(--global-pad);
   background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
