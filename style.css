@@ -483,6 +483,13 @@ div.studio-work {
 div.studio-work div.item {
   width: 100%;
   height: 600px;
+  transition: filter .3s;
+}
+
+div.studio-work div.item:hover {
+  filter: blur(5px) opacity(70%);
+  -webkit-filter: blur(5px) opacity(70%);
+  -moz-filter: blur(5px) opacity(70%);
 }
 
 div.studio-work > div {
@@ -490,6 +497,10 @@ div.studio-work > div {
   /*demo*/
   box-shadow: none;
   margin-top: 10px;
+}
+
+div.studio-work > div:nth-child(odd) {
+  border-right: solid 10px var(--bg);
 }
 
 div.item img {

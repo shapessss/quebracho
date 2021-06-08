@@ -18,4 +18,8 @@
         height: 5vh;
         width: 2px; 
       }
+
+      div.studio-work {
+        display: block;
+      }
 }
