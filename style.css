@@ -268,6 +268,7 @@ div.project-cta {
 
 div.project-cta h2 {
   width: 180px;
+  margin: 0;
 }
 
 hr {
@@ -278,20 +279,37 @@ hr {
 
 button.btn {
   background: none;
-  border: 2px solid var(--text);
-  border-radius: 3px;
-  /*border-radius: 35px;*/
-  transition:0.5s ease-in-out;
+  color: #251C2B;
+  border: 2px solid #251C2B;
+  border-radius: 3%;
   cursor: pointer;
   padding: var(--btn-pad);
   position: relative;
+  transition: all 0.5s;
   overflow: hidden;
   z-index: 200;
-  transition: transform .1s ease-in-out;
 }
 
-button.btn::before {
-  content: 'Archivo proyectos';
+button.btn:hover {
+  color: #ffffff;
+}
+
+button.btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #2b1c1c;
+  border-radius: 50% 50% 0 0;
+  height: 0%;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+button.btn:hover:before {
+  height: 210%;
 }
 
 /*button.btn:hover {
@@ -300,10 +318,6 @@ button.btn::before {
   box-shadow: 0 0.8em 0.5em -0.4em #5a5a5a;
   transform: translateY(-0.35em);
 }*/
-
-button.btn:active {
-  transform: scale(0.96);
-}
 
 section.hero {
   font-size: var(--h1-size);
