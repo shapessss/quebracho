@@ -282,6 +282,8 @@ hr {
 button.btn {
   background: none;
   color: var(--white-text);
+  font-family: 'Poppins';
+  font-weight: 400;
   border: 2px solid var(--white-text);
   border-radius: 3%;
   cursor: pointer;
