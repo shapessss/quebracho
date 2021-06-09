@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+    div.cursors {
+      display: none;
+    }
+
     aside.projects-cta-banner {
         height: 110vh;
         display: flex;
@@ -21,5 +25,23 @@
 
       div.studio-work {
         display: block;
+      }
+
+      div.terms-conditions {
+        display: block;
+        text-align: end;
+      }
+
+      div.sec-footer h1.mobile-copy {
+        display: flex;
+        flex-basis: 100px;
+      }
+
+      div.studio-work > div:nth-child(odd) {
+        border-right: none;
+      }
+
+      div.studio-work div.item {
+        height: 100%;
       }
 }
