@@ -14,7 +14,7 @@
   --white-text: #ffffff;
   --nav-text: #000000;
   --link-color: #0000ff;
-  --selection-color: #ffffff;
+  --selection-color: #e0e0e0;
   --dash-size: 0.8em;
 
   --h1-size: 80px;
@@ -65,7 +65,7 @@ body {
   max-width: 1920px;
   margin: 0 auto 0 auto;
 
-  padding-bottom: 135px;
+  padding-bottom: 147px;
 }
 
 div.page {
@@ -530,6 +530,8 @@ div.item div.item_title {
 
   visibility: hidden;
   opacity: 0;
+
+  z-index: -1;
 }
 
 div.item div.item_title p, div.item div.item_title h1 {
