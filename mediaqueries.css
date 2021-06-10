@@ -44,4 +44,8 @@
       div.studio-work div.item {
         height: 100%;
       }
+
+      div.item div.item_title {
+        top: 100px;
+      }
 }
