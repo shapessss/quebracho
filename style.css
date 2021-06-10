@@ -207,6 +207,8 @@ div.project-thumb p {
   width: 100%;
   top: 43%;
   font-size: 6.5vw;
+  font-family: 'Poppins';
+  font-weight: 600;
   text-align: center;
   z-index: 99;
 
@@ -223,6 +225,9 @@ div.project-thumb:hover p {
 div.project-thumb sup {
   vertical-align: top;
   font-size: 2.5vw;
+  font-family: Hoefler Text;
+  font-weight: normal;
+  font-style: italic;
 }
 
 div.q-info {
