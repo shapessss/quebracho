@@ -243,8 +243,10 @@ div.q-info-container {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: var(--white-text);
+
+  user-select: none;
 }
 
 div.q-info-container img {
@@ -252,9 +254,13 @@ div.q-info-container img {
 }
 
 div.q-info-container h2 {
-  width: 320px;
-  text-align: end;
-  margin-right: 20px;
+  width: 420px;
+  text-align: center;
+  margin: 0;
+}
+
+span.highlight_q-info {
+  border-bottom: 3px solid salmon;
 }
 
 aside.projects-cta-banner {
