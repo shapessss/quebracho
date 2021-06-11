@@ -45,14 +45,14 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --bg: #111118;
     --highlight: #22222a;
     --text: #fffff9;
     --link-color: #ffe100;
   }
-}
+}*/
 
 body {
   font-family: Hoefler Text, Arial;
@@ -129,8 +129,12 @@ header h1 a {
   width: 120px;
 }
 
-div.left-nav-x1 {
+nav.left-nav-x1 {
   font-size: var(--h4-size);
+}
+
+nav.left-nav-x1 a {
+  margin: 0 16px 0 0;
 }
 
 div.lang-link, div.right-nav-x2 {
@@ -152,7 +156,7 @@ div.lang-link a:first-child:after {
   margin-left: 5px;
 }
 
-div.left-nav-x1, div.right-nav-x2 {
+nav.left-nav-x1, div.right-nav-x2 {
   flex: 1;
 }
 
