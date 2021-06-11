@@ -90,16 +90,15 @@ a {
 }
 
 header {
-  /*position: -webkit-sticky;
-  position: sticky;*/
   top: 0;
   width: 100vw;
   z-index: 3;
   padding: var(--h4-size) var(--global-pad);
-  background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
 
+  position: sticky;
+  position: -webkit-sticky;
   display: flex;
   justify-content: space-between;
 }
