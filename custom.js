@@ -6,14 +6,14 @@ barba.init({
 			document.body.classList.add('loading');
 			setTimeout(function(){
 				done();
-			}, 1000);
+			}, 600);
 		},
 		enter: function(data){
 			var done = this.async();
 			done();
 			setTimeout(function(){
 				document.body.classList.remove('loading');
-			}, 1000);
+			}, 600);
 		}
 	}]
 });
