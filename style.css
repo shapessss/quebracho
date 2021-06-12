@@ -675,3 +675,12 @@ div.about-sections div.about-sections-x1 a, div.about-sections div.about-section
   font-weight: 400;
   font-size: var(--h4-size);
 }
+
+.loading {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+main {
+  opacity: 1;
+}
