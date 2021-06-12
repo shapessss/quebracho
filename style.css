@@ -66,6 +66,8 @@ body {
   margin: 0 auto 0 auto;
 
   padding-bottom: 147px;
+
+  opacity: 1;
 }
 
 div.page {
@@ -678,9 +680,4 @@ div.about-sections div.about-sections-x1 a, div.about-sections div.about-section
 
 .loading {
   opacity: 0;
-  transition: opacity 1s;
-}
-
-main {
-  opacity: 1;
 }
