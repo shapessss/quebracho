@@ -14,6 +14,7 @@ barba.init({
 			setTimeout(function(){
 				document.body.classList.remove('loading');
 			}, 600);
+            window.scrollTo(0, 0);
 		}
 	}]
 });
