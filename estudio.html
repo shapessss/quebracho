@@ -10,32 +10,78 @@
 
     <body>
         <div class="page">
-            <header class="navigation-main">
-                <nav class="left-nav-x1">
-                    <a href="portfolio.html">Portafolio</a>
-                    <a href="estudio.html">Estudio</a>
-                </nav>
+            <div class="about-modal is-active">
 
-                <div class="header-logo-x0">
-                    <a href="index.html" id="logo-header"></a>
+                <div class="about-info">
+                    <div class="about-info-p">
+                        <figure>
+                            Quebracho is an image maker based in London specialising in still life, moving image, interiors and landscapes. As well as exhibiting his personal work in London and New York, his projects have been featured on It’s Nice That, Nowness, AnOther and The Creative Review Photography Annual. 
+                        </figure>
+                    </div>
+
+                    <nav class="about-nav">
+                        <a href="#">Portafolio</a>
+                        <a href="#">Estudio</a>
+                        <a href="#"></a>
+                    </nav>
+
+                    <div class="about-sections">
+                        <div class="about-sections-x1">
+                            <h3>Contacto</h3>
+                            <a href="#">info@quebracho.mx</a>
+                            <a href="#">+1 800 988 834</a>
+                        </div>
+
+                        <div class="about-sections-x1">
+                            <h3>Siguenos</h3>
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Behance</a>
+                        </div>
+
+                        <div class="about-sections-x1">
+                            <h3>Servicios</h3>
+                            <ul>
+                                <li>Diseño gráfico</li>
+                                <li>Branding</li>
+                                <li>Estrategia</li>
+                                <li>Diseño web</li>
+                                <li>UI/UX</li>
+                                <li>Fotografía</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-sections-x1">
+                            <h3>Clientes</h3>
+                            <ul>
+                                <li>Dior</li>
+                                <li>Stella McCartney</li>
+                                <li>Bally</li>
+                                <li>Salvatore Ferragamo</li>
+                                <li>Kenzo Maison</li>
+                                <li>British Airways</li>
+                                <li>Aeromexico</li>
+                                <li>Nike</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
+            <header class="navigation-main">
                 <div class="right-nav-x2">
                     <div class="lang-link">
                         <a href="">En</a>
                         <a href="">Es</a>
                     </div>
-                    
+                </div>
 
-                    <ul>
-                        <p>Contacto</p>
-                        <li>
-                            <a href="#">+1 800 345 783</a>
-                        </li>
-                        <li>
-                            <a href="#">info@quebracho.mx</a>
-                        </li>
-                    </ul>
+                <div class="header-logo-x0">
+                    <a href="index.html" id="logo-header"></a>
+                </div>
+
+                <div class="left-nav-x1">
+                    <a href="#" id="modal-activator">MENU</a>
                 </div>
             </header>
         </div>
@@ -67,7 +113,9 @@
         </footer>
 
         
-
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+        <script src="custom.js"></script>
+        <script src="toggle-menu.js"></script>
         <script src="cursor.js"></script>
     </body>
 </html>

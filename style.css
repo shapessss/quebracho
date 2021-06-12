@@ -92,8 +92,9 @@ a {
 header {
   top: 0;
   width: 100vw;
-  z-index: 3;
+  z-index: 9999;
   padding: var(--h4-size) var(--global-pad);
+  background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
 
@@ -128,17 +129,13 @@ header h1 a {
   width: 120px;
 }
 
-nav.left-nav-x1 {
+div.left-nav-x1 {
   font-size: var(--h4-size);
-}
-
-nav.left-nav-x1 a {
-  margin: 0 16px 0 0;
+  text-align: right;
 }
 
 div.lang-link, div.right-nav-x2 {
   font-size: var(--h4-size);
-  text-align: right;
 }
 
 div.right-nav-x2 ul p {
@@ -152,10 +149,10 @@ div.lang-link a {
 div.lang-link a:first-child:after {
   content: "/";
   color: var(--text);
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
-nav.left-nav-x1, div.right-nav-x2 {
+div.left-nav-x1, div.right-nav-x2 {
   flex: 1;
 }
 
@@ -613,4 +610,68 @@ div.terms-conditions {
 
 div.terms-conditions h1 {
   margin-left: 20px;
+}
+
+/* Modal */
+div.about-modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: -100vh;
+  z-index: 999;
+  transform: translateY(0%);
+  transition-timing-function: ease;
+  overflow: hidden;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+div.about-modal.active {
+  transform: translateY(100vh);
+  color: var(--text);
+}
+
+div.about-info {
+  padding: var(--global-pad);
+  position: absolute;
+  top: 85px;
+  left: 0;
+  overflow: hidden;
+  height: calc(100vh - 85px);
+}
+
+div.about-info div.about-info-p {
+  max-width: 55%;
+  font-family: 'Poppins';
+  font-weight: 400;
+  min-height: 320px;
+}
+
+nav.about-nav {
+  margin-bottom: 48px;
+}
+
+nav.about-nav a {
+  display: block;
+  font-size: var(--h2-size);
+}
+
+div.about-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+div.about-sections div.about-sections-x1 h3 {
+  text-decoration: underline;
+  font-size: var(--h4-size);
+}
+
+div.about-sections div.about-sections-x1 a, div.about-sections div.about-sections-x1 ul {
+  display: block;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: var(--h4-size);
 }
