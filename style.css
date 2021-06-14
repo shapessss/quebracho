@@ -103,6 +103,7 @@ header {
   width: 100vw;
   z-index: 9999;
   padding: var(--h4-size) var(--global-pad);
+  background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
 
