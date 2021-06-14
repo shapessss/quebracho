@@ -82,16 +82,13 @@ window.addEventListener("scroll", function () {
   aimScroll = window.pageYOffset
 });
 
-$("nav.about.nav a, a").on("click", function (event) {
+$("nav.about-nav a, a").on("click", function (event) {
   
     event.preventDefault()
     
     const href = $(this).attr("href")
     
     window.history.pushState(null, null, href)
-    
-    $("nav a").removeClass("active")
-    $(this).addClass("active")
     
     $.ajax({
       url: href,
