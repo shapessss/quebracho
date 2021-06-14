@@ -15,6 +15,8 @@ barba.init({
 				document.body.classList.remove('loading');
 			}, 600);
             window.scrollTo(0, 0);
+			reinitTitleScene();
+            reinitScripts();
 		}
 	}]
 });
