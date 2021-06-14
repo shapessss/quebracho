@@ -17,6 +17,7 @@ barba.init({
             window.scrollTo(0, 0);
 			reinitTitleScene();
             reinitScripts();
+			reinitModal();
 		}
 	}]
 });
