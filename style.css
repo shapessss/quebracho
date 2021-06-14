@@ -81,15 +81,6 @@ div.page.no-overflow {
   overflow: hidden;
 }
 
-/* Selections */
-::-moz-selection {
-  background: var(--selection-color);
-}
-::selection {
-  background: var(--selection-color);
-}
-/* Selections */
-
 a { 
   color: var(--nav-text);
   text-decoration: none;
