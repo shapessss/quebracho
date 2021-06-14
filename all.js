@@ -81,3 +81,29 @@ window.addEventListener("scroll", function () {
   // reset the aim scroll for next scroll event
   aimScroll = window.pageYOffset
 });
+
+$("nav.about.nav a, a").on("click", function (event) {
+  
+    event.preventDefault()
+    
+    const href = $(this).attr("href")
+    
+    window.history.pushState(null, null, href)
+    
+    $("nav a").removeClass("active")
+    $(this).addClass("active")
+    
+    $.ajax({
+      url: href,
+      success: function (data) {
+        $("main").fadeOut(250, function () {
+          const newPage = $(data).filter("main").html()
+          
+          $("main").html(newPage)
+          
+          $("main").fadeIn(250)
+        })
+      }
+    })
+    
+})
