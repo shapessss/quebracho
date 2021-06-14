@@ -104,6 +104,8 @@ header {
   position: fixed;
   display: flex;
   justify-content: space-between;
+
+  transition: background-color 1s ease;
 }
 
 header.scrolled {
