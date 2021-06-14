@@ -90,9 +90,10 @@ a {
 header {
   top: 0;
   width: 100vw;
-  height: 74px;
-  z-index: 9999;
+  height: 85px;
+  z-index: 3;
   padding: var(--h4-size) var(--global-pad);
+  background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
 
@@ -618,24 +619,39 @@ div.about-modal {
   top: -100vh;
   z-index: 999;
   transform: translateY(0%);
-  transition-timing-function: ease;
-  overflow-y: hidden;
-  background-color: var(--bg);
-  color: #fff;
+  transition: opacity 0.2s linear;
+  overflow-y: scroll;
+  color: var(--white-text);
+  opacity: 0;
 }
 
 div.about-modal.active {
   transform: translateY(100vh);
-  color: var(--text);
+  color: var(--white-text);
+  opacity: 1;
+}
+
+#when-modal.active {
+  background-color: var(--bg);
+}
+
+div#modal-closer {
+  height: 85px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 
 div.about-info {
+  background-color: var(--text);
   padding: var(--global-pad);
   position: absolute;
   top: 85px;
   left: 0;
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 85px);
 }
 
 div.about-info div.about-info-p {
@@ -652,6 +668,7 @@ nav.about-nav {
 nav.about-nav a {
   display: block;
   font-size: var(--h2-size);
+  color: var(--white-text);
 }
 
 div.about-sections {
@@ -677,20 +694,17 @@ div.about-sections div.about-sections-x1 a, div.about-sections div.about-section
   font-family: 'Poppins';
   font-weight: 400;
   font-size: var(--h4-size);
+  color: var(--white-text);
 }
 
-nav.about-nav a {
+nav.about-nav a, div.about-sections div.about-sections-x1 a {
   transition: .2s ease;
 }
 
-nav.about-nav:hover a {
+nav.about-nav:hover a, div.about-sections div.about-sections-x1:hover a {
   opacity: 0.3;
 }
 
-nav.about-nav a:hover {
+nav.about-nav a:hover, div.about-sections div.about-sections-x1 a:hover {
   opacity: 1;
 }
-
-/*.loading {
-  opacity: 0;
-}*/
