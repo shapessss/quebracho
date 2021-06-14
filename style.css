@@ -101,6 +101,7 @@ a {
 header {
   top: 0;
   width: 100vw;
+  height: 74px;
   z-index: 9999;
   padding: var(--h4-size) var(--global-pad);
   background-color: var(--bg);
