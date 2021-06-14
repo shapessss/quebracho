@@ -103,7 +103,6 @@ header {
   width: 100vw;
   z-index: 9999;
   padding: var(--h4-size) var(--global-pad);
-  background: linear-gradient(180deg,hsla(0,0%,100%,.8) 0,hsla(0,0%,100%,.45) 70%,hsla(0,0%,100%,0));
   font-variation-settings: "wght" 600;
   align-items: center;
 
@@ -111,12 +110,6 @@ header {
   position: -webkit-sticky;
   display: flex;
   justify-content: space-between;
-
-  transition: background .7s;
-}
-
-header:hover {
-  background: var(--bg);
 }
 
 header h1:before {
@@ -708,6 +701,6 @@ nav.about-nav a:hover {
   opacity: 1;
 }
 
-.loading {
+/*.loading {
   opacity: 0;
-}
+}*/
