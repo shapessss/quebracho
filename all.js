@@ -1,8 +1,10 @@
 const toggletag = document.querySelector("#modal-activator")
 const navTag = document.querySelector("div.about-modal")
+const pageTag = document.querySelector("body")
 
 toggletag.addEventListener("click", function () {
     navTag.classList.toggle("active")
+    pageTag.classList.toggle("no-overflow")
 });
 
 // code taken from our tutorial
@@ -81,31 +83,3 @@ window.addEventListener("scroll", function () {
   // reset the aim scroll for next scroll event
   aimScroll = window.pageYOffset
 });
-
-const headerTag = document.querySelector("header")
-
-const toggleHeader = function () {
-  const pixels = window.pageYOffset
-  
-  if (pixels > 60) {
-    headerTag.classList.add("scrolled")
-  } else {
-    headerTag.classList.remove("scrolled")
-  }
-}
-
-const fadeBox = function () {
-  const pixels = window.pageYOffset
-  const alpha = Math.min(pixels / 200, 0.25)
-  
-  
-  headerTag.style.boxShadow = `0 0 10px rgba(0, 0, 0, ${alpha})`
-}
-
-fadeBox()
-toggleHeader()
-
-document.addEventListener("scroll", function () {
-  toggleHeader()
-  fadeBox()
-})

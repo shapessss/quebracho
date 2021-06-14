@@ -77,6 +77,10 @@ div.page {
   background-color: var(--bg);
 }
 
+div.page.no-overflow {
+  overflow: hidden;
+}
+
 /* Selections */
 ::-moz-selection {
   background: var(--selection-color);
@@ -105,12 +109,6 @@ header {
   position: -webkit-sticky;
   display: flex;
   justify-content: space-between;
-
-  transition: background-color .5s;
-}
-
-header.scrolled {
-  background-color: var(--bg);
 }
 
 header h1:before {
@@ -630,7 +628,7 @@ div.about-modal {
   z-index: 999;
   transform: translateY(0%);
   transition-timing-function: ease;
-  overflow: hidden;
+  overflow-y: hidden;
   background-color: var(--bg);
   color: #fff;
 }
@@ -646,7 +644,7 @@ div.about-info {
   top: 85px;
   left: 0;
   overflow: hidden;
-  height: calc(100vh - 85px);
+  height: 100vh;
 }
 
 div.about-info div.about-info-p {
