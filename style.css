@@ -107,8 +107,7 @@ header {
   font-variation-settings: "wght" 600;
   align-items: center;
 
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   display: flex;
   justify-content: space-between;
 }
