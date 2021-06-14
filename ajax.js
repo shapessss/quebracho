@@ -1,4 +1,4 @@
-$("nav.about-nav a").on("click", function (event) {
+$("nav.about-nav a, a").on("click", function (event) {
     //event.preventDefault()
 
     const href = $(this).attr("href")
@@ -8,12 +8,12 @@ $("nav.about-nav a").on("click", function (event) {
     $.ajax({
         url: href,
         seccess: function (data) {
-            $("body").fadeOut(500, function () {
-                const newPage = $(data).filter("body").html()
+            $("main").fadeOut(500, function () {
+                const newPage = $(data).filter("main").html()
 
-                $("body").html(newPage)
+                $("main").html(newPage)
 
-                $("body").fadeIn(500)
+                $("main").fadeIn(500)
             })
         }
     })
