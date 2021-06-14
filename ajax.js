@@ -1,6 +1,6 @@
 $("nav.about-nav a").on("click", function (event) {
   
-    event.preventDefault()
+    //event.preventDefault()
     
     const href = $(this).attr("href")
     
