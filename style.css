@@ -101,11 +101,12 @@ header {
   font-variation-settings: "wght" 600;
   align-items: center;
 
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   display: flex;
   justify-content: space-between;
 
-  transition: background-color 1s ease;
+  transition: background-color .5s;
 }
 
 header.scrolled {
