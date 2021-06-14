@@ -84,7 +84,7 @@ window.addEventListener("scroll", function () {
 
 $("nav.about-nav a, a").on("click", function (event) {
   
-    event.preventDefault()
+    //event.preventDefault()
     
     const href = $(this).attr("href")
     
