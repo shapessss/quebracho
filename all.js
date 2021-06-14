@@ -82,7 +82,7 @@ window.addEventListener("scroll", function () {
   aimScroll = window.pageYOffset
 });
 
-$("nav.about-nav a, a").on("click", function (event) {
+$("nav.about-nav a").on("click", function (event) {
   
     //event.preventDefault()
     
