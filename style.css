@@ -98,13 +98,16 @@ header {
   height: 74px;
   z-index: 9999;
   padding: var(--h4-size) var(--global-pad);
-  background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
 
   position: fixed;
   display: flex;
   justify-content: space-between;
+}
+
+header.scrolled {
+  background-color: var(--bg);
 }
 
 header h1:before {
