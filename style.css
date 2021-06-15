@@ -90,7 +90,7 @@ a {
 header {
   top: 0;
   width: 100vw;
-  height: 85px;
+  height: 75px;
   z-index: 3;
   padding: var(--h4-size) var(--global-pad);
   background-color: var(--bg);
@@ -660,7 +660,7 @@ div.about-info {
   background-color: var(--text);
   padding: var(--global-pad);
   position: absolute;
-  top: 85px;
+  top: 75px;
   left: 0;
   overflow: hidden;
   height: calc(100vh - 85px);
