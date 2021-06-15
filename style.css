@@ -663,7 +663,7 @@ div.about-info {
   top: 75px;
   left: 0;
   overflow: hidden;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
