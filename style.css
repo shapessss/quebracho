@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1;}
+}
+
 :root {
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;
@@ -268,7 +273,6 @@ aside.projects-cta-banner {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: var(--pad);
 }
 
 div.project-cta {
