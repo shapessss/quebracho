@@ -619,7 +619,7 @@ div.about-modal {
   top: -100vh;
   z-index: 999;
   transform: translateY(0%);
-  transition: opacity 0.2s linear;
+  transition: opacity 0.2s ease 0.1s;
   overflow-y: scroll;
   color: var(--white-text);
   opacity: 0;
