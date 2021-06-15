@@ -110,9 +110,9 @@ const fadeIn = function () {
 fadeIn()
 
 document.addEventListener("scroll", function () {
-  fadeIn()
+  fadeIn();
 })
 
 window.addEventListener("resize", function () {
-  fadeIn()
+  fadeIn();
 })

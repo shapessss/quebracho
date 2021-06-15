@@ -214,7 +214,7 @@ div.project-thumb p {
   font-family: 'Poppins';
   font-weight: 600;
   text-align: center;
-  z-index: 99;
+  z-index: 1;
 
   visibility: hidden;
   opacity: 0;
