@@ -116,3 +116,8 @@ document.addEventListener("scroll", function () {
 window.addEventListener("resize", function () {
   fadeIn();
 })
+
+// leave body
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});

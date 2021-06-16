@@ -8,6 +8,27 @@
   100% { opacity: 1;}
 }
 
+@-webkit-keyframes fadeStart {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeStart {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-in {
+  -webkit-animation: fadeStart 1.2s ease-in;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.animate-out {
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+  opacity: 0;
+}
+
 :root {
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;
