@@ -19,13 +19,13 @@
 }
 
 .animate-in {
-  -webkit-animation: fadeStart 0.5s ;
-  animation: fadeStart 0.5s;
+  -webkit-animation: fadeStart 0.5s ease;
+  animation: fadeStart 0.5s ease-in;
 }
 
 .animate-out {
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
   opacity: 0;
 }
 
