@@ -204,10 +204,6 @@ div.project-thumb img {
 div.project-thumb:hover {
   filter: brightness(55%);
   -webkit-filter: brightness(55%);
-
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
 }
 
 div.project-thumb p {
@@ -218,14 +214,12 @@ div.project-thumb p {
   font-family: 'Poppins';
   font-weight: 600;
   text-align: center;
-  /z-index: 1;*/
+  /*z-index: 1;*/
 
   visibility: hidden;
   opacity: 0;
   transition: opacity .3s ease-in-out;
 }
-
-
 
 div.project-thumb:hover p {
   visibility: visible;
