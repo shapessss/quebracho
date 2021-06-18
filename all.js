@@ -121,3 +121,18 @@ window.addEventListener("resize", function () {
 window.addEventListener("beforeunload", function () {
   document.body.classList.add("animate-out");
 });
+
+
+// tel function
+//const telTag = document.querySelector("#tel")
+
+//telTag.addEventListener("click", function (fork) {
+//  fork.preventDefault()
+//})
+
+const telTag = document.querySelector("#tel")
+
+telTag.addEventListener("click", function (fork) {
+  window.open("tel:+52 33 2937 1055")
+  fork.stopPropagation();
+})
