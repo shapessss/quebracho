@@ -118,9 +118,9 @@ window.addEventListener("resize", function () {
 })
 
 // leave body
-window.addEventListener("beforeunload", function () {
-  document.body.classList.add("animate-out");
-});
+//window.addEventListener("beforeunload", function () {
+//  document.body.classList.add("animate-out");
+//});
 
 
 // tel function
