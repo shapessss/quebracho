@@ -117,22 +117,31 @@ window.addEventListener("resize", function () {
   fadeIn();
 })
 
-// leave body
-//window.addEventListener("beforeunload", function () {
-//  document.body.classList.add("animate-out");
-//});
-
-
-// tel function
-//const telTag = document.querySelector("#tel")
-
-//telTag.addEventListener("click", function (fork) {
-//  fork.preventDefault()
-//})
-
+// call function
 const telTag = document.querySelector("#tel")
 
 telTag.addEventListener("click", function (fork) {
   window.open("tel:+52 33 2937 1055")
   fork.stopPropagation();
 })
+
+// barba trans
+barba.init({
+	transitions: [{
+		name: 'trans',
+		leave: function(data){
+			var done = this.async();
+			document.body.classList.add('loading');
+			setTimeout(function(){
+				done();
+			},400);
+		},
+		enter: function(data){
+			var done = this.async();
+			done();
+			setTimeout(function(){
+				document.body.classList.remove('loading');
+			},400);
+		}
+	}]
+});

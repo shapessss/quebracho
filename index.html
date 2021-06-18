@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="mediaqueries.css">
     </head>
 
-    <body>
+    <body data-barba="wrapper">
         <div class="page">
             <div class="about-modal">
                 <div id="modal-closer">
@@ -86,7 +86,7 @@
                 </div>
             </header>
 
-            <main>
+            <main data-barba="container" data-barba-namespace="home">
             <div class="container">
                 <!--<a href="#"><img src="qw-filled.png"></a>-->
                 <video autoplay loop muted class="video-bg">
@@ -175,5 +175,6 @@
         </footer>
 
         <script src="all.js"></script>
+        <script src="https://unpkg.com/@barba/core"></script>
     </body>
 </html>
