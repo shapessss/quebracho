@@ -120,6 +120,7 @@ window.addEventListener("resize", function () {
 // call function
 const telTag = document.getElementById("tel")
 
-telTag.addEventListener("click", function () {
+telTag.addEventListener("click", function (fork) {
   window.location.href="tel:+52 33 2937 1055"
+  fork.preventDefault()
 });
