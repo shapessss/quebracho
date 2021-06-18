@@ -124,3 +124,10 @@ telTag.addEventListener("click", function (fork) {
   window.location.href="tel:+52 33 2937 1055"
   fork.preventDefault()
 });
+
+const mailTag = document.getElementById("email")
+
+mailTag.addEventListener("click", function (tomato) {
+  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
+  tomato.preventDefault()
+})
