@@ -89,7 +89,7 @@ window.addEventListener("scroll", function () {
 });
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, button, div.item")
+const animatedTags = document.querySelectorAll("h2, button")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -118,9 +118,8 @@ window.addEventListener("resize", function () {
 })
 
 // call function
-const telTag = document.querySelector("#tel")
+const telTag = document.getElementById("tel")
 
-telTag.addEventListener("click", function (fork) {
-  window.open("tel:+52 33 2937 1055")
-  fork.stopPropagation();
-})
+telTag.addEventListener("click", function () {
+  window.location.href="tel:+52 33 2937 1055"
+});
