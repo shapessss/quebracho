@@ -17,7 +17,7 @@ toggleCloser.addEventListener("click", function () {
 const cursorTag = document.createElement("div")
 const balls = [
   document.createElement("div"),
-  document.createElement("div"),
+//  document.createElement("div"),
 //  document.createElement("div"),
 //  document.createElement("div"),
 //  document.createElement("div"),
