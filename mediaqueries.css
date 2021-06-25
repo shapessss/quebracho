@@ -4,7 +4,7 @@
     }
 
     aside.projects-cta-banner {
-        height: 110vh;
+        height: 70vh;
         display: flex;
         align-items: center;
         padding: 64px 48px 64px 48px;;
@@ -19,7 +19,7 @@
       div.project-cta hr {
         border: none;
         border-left: 2px solid #ffffff;
-        height: 50vh;
+        height: 10vh;
         width: 2px;
         margin: 24px 0;
       }
