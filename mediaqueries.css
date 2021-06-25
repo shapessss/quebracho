@@ -49,4 +49,8 @@
       div.item div.item_title {
         top: 39%;
       }
+
+      section.project__description figcaption {
+        padding: var(--global-pad) 0;
+      }
 }
