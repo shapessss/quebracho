@@ -51,8 +51,9 @@
   :root {
     --h1-size: 40px;
     --h2-size: 32px;
-    --h3-size: 18px;
+    --h3-size: 14px;
     --p-size: 18px;
+    --global-pad: 14px;
   }
 }
 
@@ -603,9 +604,14 @@ div.project__x1 div.right {
   padding-left: 10px;
 }
 
-section.project__description {
-  display: flex;
-  justify-content: space-between;
+figcaption.small {
+  font-family: 'Poppins';
+  font-size: var(--h3-size);
+  line-height: 1.5;
+}
+
+figcaption.small a:hover {
+  text-decoration: underline;
 }
 
 footer {
