@@ -76,6 +76,10 @@ body {
   padding-bottom: 147px;
 }
 
+body.active_body {
+  overflow: hidden;
+}
+
 div.page {
   position: relative;
   z-index: 2;
@@ -111,6 +115,10 @@ header {
 
 header.scrolled {
   background-color: rgba(0, 0, 0, 0);
+}
+
+header.active_header {
+  background-color: var(--bg);
 }
 
 header h1:before {

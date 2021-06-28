@@ -1,14 +1,20 @@
 const toggleTag = document.querySelector("a#modal-activator")
 const toggleCloser = document.querySelector("div#modal-closer")
 const navTag = document.querySelector("div.about-modal")
+const headTag = document.querySelector("header")
+const bodyactiveTag = document.querySelector("body")
 
 toggleTag.addEventListener("click", function () {
-    navTag.classList.toggle("active")
+    navTag.classList.toggle("active") 
+    headTag.classList.add("active_header")
+    bodyactiveTag.classList.add("active_body")
     event.preventDefault()
 })
 
 toggleCloser.addEventListener("click", function () {
     navTag.classList.toggle("active")
+    headTag.classList.remove("active_header")
+    bodyactiveTag.classList.remove("active_body")
 });
 
 // code taken from our tutorial
