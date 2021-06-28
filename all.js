@@ -70,7 +70,20 @@ balls.forEach((ball, index) => {
 document.addEventListener("mousemove", function (event) {
   aimX = event.pageX
   aimY = event.pageY
-})
+});
+
+// Header logo change on scroll
+const headerTag = document.querySelector("header")
+
+document.addEventListener("scroll", function () {
+  const pixels = window.pageYOffset
+
+  if (pixels > 145) {
+    headerTag.classList.add("scrolled")
+  } else {
+    headerTag.classList.remove("scrolled")
+  }
+});
 
 
 // to account for page scroll
