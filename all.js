@@ -144,9 +144,9 @@ const secMail = document.getElementById("sec_email")
 mailTag.addEventListener("click", function (tomato) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   tomato.preventDefault()
-})
+});
 
 secMail.addEventListener("click", function(onion) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   onion.preventDefault()
-})
+});
