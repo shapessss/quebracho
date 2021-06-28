@@ -136,17 +136,4 @@ mailTag.addEventListener("click", function (tomato) {
 secMail.addEventListener("click", function(onion) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   onion.preventDefault()
-});
-
-// Header logo change on scroll
-const headerTag = document.querySelector("header")
-
-document.addEventListener("scroll", function () {
-  const pixels = window.pageYOffset
-
-  if (pixels > 145) {
-    headerTag.classList.add("scrolled")
-  } else {
-    headerTag.classList.remove("scrolled")
-  }
-});
+})
