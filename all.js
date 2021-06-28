@@ -128,7 +128,7 @@ document.addEventListener("scroll", function () {
 
 window.addEventListener("resize", function () {
   fadeIn();
-})
+});
 
 // call function
 const telTag = document.getElementById("tel")
