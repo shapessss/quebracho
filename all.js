@@ -149,4 +149,4 @@ document.addEventListener("scroll", function () {
   } else {
     headerTag.classList.remove("scrolled")
   }
-})
+});
