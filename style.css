@@ -581,7 +581,7 @@ div.item:hover div.item_title {
 
 /* project styles */
 section.project-container {
-  padding: 0 var(--global-pad);
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
