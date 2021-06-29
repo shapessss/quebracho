@@ -94,7 +94,7 @@ window.addEventListener("scroll", function () {
 });
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, button")
+const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
