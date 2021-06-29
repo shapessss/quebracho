@@ -150,6 +150,7 @@ header h1 a {
   background-image: url('quebracho-scroll.svg');
   height: 40px;
   width: 110px;
+  animation: fadeIn 0.5s 0.5s both;
 }
 
 div.left-nav-x1 {
