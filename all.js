@@ -145,13 +145,16 @@ secMail.addEventListener("click", function(onion) {
 
 // Header style on scroll
 const headerTag = document.querySelector("header")
+const logoTag = document.getElementById("logo-header")
 
 document.addEventListener("scroll", function () {
   const pixels = window.pageYOffset
 
   if (pixels > 145) {
     headerTag.classList.add("scrolled")
+    logoTag.classList.add("new_logo")
   } else {
     headerTag.classList.remove("scrolled")
+    logoTag.classList.remove("new_logo")
   }
 });

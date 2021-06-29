@@ -146,6 +146,12 @@ header h1 a {
   width: 100px;
 }
 
+#logo-header.new_logo {
+  background-image: url('quebracho-scroll.svg');
+  height: 40px;
+  width: 110px;
+}
+
 div.left-nav-x1 {
   font-size: var(--h4-size);
 }
