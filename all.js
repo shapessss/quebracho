@@ -158,3 +158,11 @@ document.addEventListener("scroll", function () {
     logoTag.classList.remove("new_logo")
   }
 });
+
+// Copyright date to current year
+function currentYear() {
+  const d = new Date()
+  const n = d.getFullYear()
+  document.getElementById('copyright').innerHTML = '&copy; Quebracho ' + n
+}
+currentYear()
