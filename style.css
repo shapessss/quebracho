@@ -13,6 +13,16 @@
   100% { opacity: 1;}
 }
 
+@keyframes translated {
+  0% { transform: translateY(25px); opacity: 0; animation-timing-function:ease-in-out; }
+  100% { transform: translateY(0px); opacity: 1; animation-timing-function:ease-in-out; }
+}
+
+@-webkit-keyframes translated {
+  0% { transform: translateY(25px); opacity: 0; animation-timing-function:ease-in-out; }
+  100% { transform: translateY(0px); opacity: 1; animation-timing-function:ease-in-out; }
+}
+
 :root {
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;

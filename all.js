@@ -122,6 +122,33 @@ window.addEventListener("resize", function () {
   fadeIn();
 })
 
+// image animation on scroll for individual project
+const animatedImage =  document.querySelectorAll("section.project-container img")
+
+animatedImage.forEach(img => {
+  img.style.opacity = 0
+})
+
+const translated = function () {
+  animatedImage.forEach(img => {
+    const imgTop = img.getBoundingClientRect().top
+
+    if (imgTop < window.innerHeight) {
+      img.style.animation = "translated 1.2s 0.2s both"
+    }
+  })
+}
+
+translated()
+
+document.addEventListener("scroll", function () {
+  translated()
+})
+
+document.addEventListener("resize", function () {
+  translated()
+})
+
 // call function
 const telTag = document.getElementById("tel")
 
