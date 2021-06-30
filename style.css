@@ -668,7 +668,7 @@ section.hero__about {
 }
 
 section.pad__about div.pad__about__foot {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
