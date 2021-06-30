@@ -675,6 +675,7 @@ section.pad__about div.pad__about__foot {
   align-items: center;
   bottom: 0;
   padding: 60px;
+  width: 100%;
 }
 
 section.pad__about div.circle {
