@@ -58,4 +58,8 @@
         width: 100%;
         padding: 0 var(--global-pad);
       }
+
+      section.pad__about {
+        width: 100%;
+      }
 }

@@ -193,3 +193,37 @@ function currentYear() {
   document.getElementById('copyright').innerHTML = '&copy; Quebracho ' + n
 }
 currentYear()
+
+// About sliders
+let pageNumber = 0
+
+const pages = [
+  { copy: "Estudio creativo Desarrollamos soluciones creativas integrales" },
+  { copy: "Seres creativos que tenemos la inquietud de compartir nuestro talento junto al tuyo, para poder crear algo mágico y extraordinario, tú proyecto" },
+  { copy: "Ya que la empresa  lleva por nombre quebracho que es una de las maderas más duras que existen.; se propone retomar el concepto para aplicarlo en la identidad de manera sútil y agradable" },
+  { copy: "Inspirándonos en la textura natural de la madera y llevándola como un patrón de nuestra identidad y para llevar el color marrón a un nivel de sofisticación se optá por el color metálico como el bronce" },
+  { copy: "Para aplicaciones e identidad y mantener la elegancia tenemos presente el negro y blanco como colores neutros, que a su vez trabajando con el bronce, crea un personalidad muy sofisticada y elegante" },
+  { copy: "La imagen pretende proyectar una empresa orgánica, humana, retomando el concepto del naiming  desarrollando elementos  abstractos alusivos a la madera como gráficos de soporte. La madera representa la cercanía y cálidez de nuestro servicio" },
+  { copy: "El logotipo es un letragrama con tipografía clásica con serifas elegantes. Una puntual atención en la inicial “Q” en caligrafía con más personalizada y muy orgánica" }
+]
+
+const circleTag = document.querySelector("div.circle")
+const outputTag = document.querySelector("section.pad__about p")
+
+const next = function () {
+  pageNumber = pageNumber + 1
+
+  if (pageNumber > pages.length - 1) {
+    pageNumber = 0
+  }
+  
+  updateSection()
+}
+
+const updateSection = function () {
+  outputTag.innerHTML = pages[pageNumber].copy
+}
+
+circleTag.addEventListener("click", function () {
+  next()
+})

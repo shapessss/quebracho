@@ -644,6 +644,47 @@ figcaption.small a:hover {
   text-decoration: underline;
 }
 
+/*About page styles */
+section.pad__about {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: var(--pad);
+  transform: translate(0, -10%);
+
+  transition: opacity 0.5s;
+}
+
+section.hero__about {
+  min-height: 420px;
+  background: #0000ff;
+}
+
+section.pad__about div.pad__about__foot {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 60px;
+}
+
+section.pad__about div.circle {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
 footer {
   position: fixed;
   display: flex;
