@@ -86,6 +86,11 @@ body {
   padding-bottom: 147px;
 }
 
+body.no-padding {
+  padding: 0;
+  overflow: hidden;
+}
+
 body.active_body {
   overflow: hidden;
 }
@@ -153,8 +158,13 @@ header h1 a {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
+  /* normal size
   height: 30px;
   width: 100px;
+  */
+  /* new size */
+  height: 40px;
+  width: 110px;
 }
 
 #logo-header.new_logo {
@@ -646,35 +656,84 @@ figcaption.small a:hover {
 }
 
 /*About page styles */
-div.about-wrapper {
+div.snap-container {
   position: relative;
+  height: 100vh;
+  overflow: auto;  
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+aside.snap-section {
+  scroll-snap-align: start end;
+  min-height: 100vh;
+}
+
+aside.about-hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+div.about-hero-cta figcaption {
+  font-family: 'Poppins';
+}
+
+div.about-hero-cta figcaption h2 {
+  font-size: var(--h1-size);
+  font-weight: 600;
+  margin: 0 0 14px 0;
+}
+
+div.about-hero-cta p.p-small {
+  font-size: var(--h3-size);
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
+}
+
+div.about-hero-cta figcaption p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+div.translated {
+  transform: translate(0px, -50px)
+}
+
+section.about-sections {
+  display: flex;
+  flex-direction: row;
+}
+
+section.about-sections div {
+  width: 50%;
+}
+
+section.about-sections div.about-sections-txt {
   padding: var(--global-pad);
 }
 
-div.about-wrapper div.about-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+figcaption.full-caption {
+  height: 100vh;
 }
 
-div.about-wrapper div.image-dynamic {
-  width: 100%;
-  min-height: 320px;
-}
+section.about-sections div.about-sections-img {
+  height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("quebracho-trunks.gif");
 
-div.about-moreinfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  line-height: 1.5;
-  width: 80%;
-  margin-top: 48px;
-}
-
-div.about-moreinfo div.about-moreinfo-x1 {
-  padding-right: 45px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 footer {

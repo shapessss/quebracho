@@ -39,11 +39,15 @@ const fadeIn = function () {
 fadeIn()
 
 document.addEventListener("scroll", function () {
-  fadeIn();
+  fadeIn()
+})
+
+document.addEventListener("wheel", function () {
+  fadeIn()
 })
 
 window.addEventListener("resize", function () {
-  fadeIn();
+  fadeIn()
 })
 
 // image animation on scroll for individual project
