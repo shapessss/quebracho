@@ -38,9 +38,9 @@ const fadeIn = function () {
 
 fadeIn()
 
-document.addEventListener("scroll", function () {
-  fadeIn()
-})
+//document.addEventListener("scroll", function () {
+//  fadeIn()
+//})
 
 document.addEventListener("touchmove", function () {
   fadeIn()
