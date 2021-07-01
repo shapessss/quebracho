@@ -659,7 +659,8 @@ figcaption.small a:hover {
 div.snap-container {
   position: relative;
   height: 100vh;
-  overflow: auto;  
+  overflow-y: scroll;
+  overflow-x: hidden;  
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
 }
