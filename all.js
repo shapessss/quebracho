@@ -46,6 +46,10 @@ document.addEventListener("wheel", function () {
   fadeIn()
 })
 
+document.addEventListener("touchstart", function () {
+  fadeIn()
+})
+
 window.addEventListener("resize", function () {
   fadeIn()
 })
