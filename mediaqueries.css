@@ -59,7 +59,13 @@
         padding: 0 var(--global-pad);
       }
 
-      section.pad__about {
+      div.about__section section {
+        height: 50vh;
         width: 100%;
+        padding: var(--pad);
+      }
+
+      div.about__section section p{
+        font-size: inherit;
       }
 }
