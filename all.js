@@ -17,82 +17,6 @@ toggleCloser.addEventListener("click", function () {
     bodyactiveTag.classList.remove("active_body")
 });
 
-// code taken from our tutorial
-// https://www.youtube.com/watch?v=uprZMdVl-aQ
-
-const cursorTag = document.createElement("div")
-const balls = [
-  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-//  document.createElement("div"),
-]
-
-cursorTag.classList.add("cursors")
-document.body.append(cursorTag)
-
-let aimX = -30
-let aimY = -30
-
-
-
-balls.forEach((ball, index) => {
-  let currentX = -30
-	let currentY = -30
-
-  cursorTag.append(ball)
-
-	let speed = 0.2 - index * 0.005
-  
-  const animate = function () {
-    currentX += (aimX - currentX) * speed
-    currentY += (aimY - currentY) * speed
-
-    ball.style.left = currentX + "px"
-    ball.style.top = currentY + "px"
-
-    requestAnimationFrame(animate)
-  }
-
-  animate()
-})
-
-document.addEventListener("mousemove", function (event) {
-  aimX = event.pageX
-  aimY = event.pageY
-});
-
-// to account for page scroll
-let currentScroll = window.pageYOffset
-let aimScroll = window.pageYOffset
-
-window.addEventListener("scroll", function () {
-  // where are we now we've scrolled
-  currentScroll = window.pageYOffset
-  
-  // update aimY with the difference
-  aimY += currentScroll - aimScroll
-  
-  // reset the aim scroll for next scroll event
-  aimScroll = window.pageYOffset
-});
-
 // text animation script
 const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption")
 
@@ -194,36 +118,43 @@ function currentYear() {
 }
 currentYear()
 
-// About sliders
-let pageNumber = 0
+// About parallax
+const sections = document.querySelectorAll("div.about__section section")
+const bodyTag = document.querySelector("div.page")
 
-const pages = [
-  { copy: "Estudio creativo Desarrollamos soluciones creativas integrales" },
-  { copy: "Seres creativos que tenemos la inquietud de compartir nuestro talento junto al tuyo, para poder crear algo mágico y extraordinario, tú proyecto" },
-  { copy: "Ya que la empresa  lleva por nombre quebracho que es una de las maderas más duras que existen.; se propone retomar el concepto para aplicarlo en la identidad de manera sútil y agradable" },
-  { copy: "Inspirándonos en la textura natural de la madera y llevándola como un patrón de nuestra identidad y para llevar el color marrón a un nivel de sofisticación se optá por el color metálico como el bronce" },
-  { copy: "Para aplicaciones e identidad y mantener la elegancia tenemos presente el negro y blanco como colores neutros, que a su vez trabajando con el bronce, crea un personalidad muy sofisticada y elegante" },
-  { copy: "La imagen pretende proyectar una empresa orgánica, humana, retomando el concepto del naiming  desarrollando elementos  abstractos alusivos a la madera como gráficos de soporte. La madera representa la cercanía y cálidez de nuestro servicio" },
-  { copy: "El logotipo es un letragrama con tipografía clásica con serifas elegantes. Una puntual atención en la inicial “Q” en caligrafía con más personalizada y muy orgánica" }
-]
+const addMovement = function () {
+  const topViewport = window.pageYOffset
+  const midViewport = topViewport + (window.innerHeight / 4)
 
-const circleTag = document.querySelector("div.circle")
-const outputTag = document.querySelector("section.pad__about p")
+  sections.forEach((section, index) => {
+    const topSection = section.offsetTop
+    const midSection = topSection + (section.offsetHeight / 4)
 
-const next = function () {
-  pageNumber = pageNumber + 1
+    const distanceToSection = midViewport - midSection
 
-  if (pageNumber > pages.length - 1) {
-    pageNumber = 0
-  }
-  
-  updateSection()
+    const paragraphTag = section.querySelector("p")
+
+    let contentDist = -1 * distanceToSection / 4
+
+    if (index % 2 == 0) {
+      contentDist = contentDist * -1
+    }
+
+    paragraphTag.style.transform = `translateY(${contentDist}px)`
+
+    if (distanceToSection > -100) {
+      const dataBackground = section.getAttribute("data-background")
+      bodyTag.style.backgroundColor = dataBackground
+    }
+  })
 }
 
-const updateSection = function () {
-  outputTag.innerHTML = pages[pageNumber].copy
-}
+addMovement()
 
-circleTag.addEventListener("click", function () {
-  next()
+document.addEventListener("scroll", function () {
+  addMovement()
+})
+
+window.addEventListener("scroll", function () {
+  addMovement()
 })
