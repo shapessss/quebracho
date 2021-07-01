@@ -60,7 +60,6 @@
       }
 
       div.about__section section {
-        height: 50vh;
         width: 100%;
         padding: var(--pad);
       }
