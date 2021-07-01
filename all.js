@@ -42,7 +42,7 @@ document.addEventListener("scroll", function () {
   fadeIn()
 })
 
-document.addEventListener("wheel", function () {
+window.addEventListener("wheel", function () {
   fadeIn()
 })
 
