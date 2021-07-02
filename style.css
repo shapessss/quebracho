@@ -666,7 +666,7 @@ div.snap-container {
 }
 
 aside.snap-section {
-  scroll-snap-align: start end;
+  scroll-snap-align: center;
   min-height: 100vh;
 }
 
