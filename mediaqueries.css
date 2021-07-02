@@ -76,7 +76,7 @@
         flex-direction: column;
       }
 
-      div.about-info div.about-info-p figcaption {
-        padding: var(--global-pad);
+      div.about-info div.about-info-p {
+        display: none;
       }
 }
