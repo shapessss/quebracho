@@ -676,9 +676,6 @@ aside.about-hero {
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  position: sticky;
-  position: -webkit-sticky;
 }
 
 div.about-hero-cta figcaption {
