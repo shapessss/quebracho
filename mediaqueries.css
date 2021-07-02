@@ -93,13 +93,6 @@
         display: none;
       }
 
-      div.page {
-        transition: filter 0.2s ease-out;
-        -webkit-transition: filter 0.2s ease-out;
-        -moz-transition: filter 0.2s ease-out;
-        -ms-transition: filter 0.2s ease-out;
-      }
-
       div.page.blured {
         filter: blur(0) brightness(0.6);
         -webkit-filter: blur(0) brightness(0.6);
