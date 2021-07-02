@@ -116,6 +116,14 @@ div.page {
   -webkit-transition: background-color 0.2s ease-out, filter 0.2s ease-out;
   -moz-transition: background-color 0.2s ease-out, filter 0.2s ease-out;
   -ms-transition: background-color 0.2s ease-out, filter 0.2s ease-out;
+}
+
+div.page.blured {
+  filter: blur(6px) brightness(0.8);
+  -webkit-filter: blur(6px) brightness(0.8);
+  -moz-filter: blur(6px) brightness(0.8);
+  -o-filter: blur(6px) brightness(0.8);
+  -ms-filter: blur(6px) brightness(0.8);
 
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -125,14 +133,6 @@ div.page {
   perspective: 1000;
   transform: translate3d(0,0,0);
   transform: translateZ(0);
-}
-
-div.page.blured {
-  filter: blur(6px) brightness(0.8);
-  -webkit-filter: blur(6px) brightness(0.8);
-  -moz-filter: blur(6px) brightness(0.8);
-  -o-filter: blur(6px) brightness(0.8);
-  -ms-filter: blur(6px) brightness(0.8);
 }
 
 div.page.no-overflow {
