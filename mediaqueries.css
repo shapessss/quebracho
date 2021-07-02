@@ -93,6 +93,13 @@
         display: none;
       }
 
+      div.page {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+      }
+
       div.page.blured {
         filter: blur(0) brightness(0.6);
         -webkit-filter: blur(0) brightness(0.6);
