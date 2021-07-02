@@ -88,4 +88,8 @@
       div.about-sections-x1 {
         margin: 0 0 24px 0;
       }
+
+      div.left-nav-x1 a {
+        display: none;
+      }
 }

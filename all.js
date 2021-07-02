@@ -1,24 +1,36 @@
 const toggleTag = document.querySelector("a#modal-activator")
-const toggleCloser = document.querySelector("div#modal-closer")
-const navTag = document.querySelector("div.about-modal")
+//const toggleCloser = document.querySelector("div#modal-closer")
+const fullCloser = document.querySelector(".about-info")
+const navTag = document.querySelector("div.full-menu")
 const headTag = document.querySelector("header")
 const bodyactiveTag = document.querySelector("body")
+const pageTag = document.querySelector(".page")
 
-toggleTag.addEventListener("click", function () {
+toggleTag.addEventListener("click", function (delta) {
     navTag.classList.toggle("active")
     headTag.classList.add("active_header")
     bodyactiveTag.classList.add("active_body")
-    event.preventDefault()
+    pageTag.classList.add("blured")
+    delta.preventDefault()
 })
 
-toggleCloser.addEventListener("click", function () {
+//toggleCloser.addEventListener("click", function (alpha) {
+//    navTag.classList.toggle("active")
+//    headTag.classList.remove("active_header")
+//    bodyactiveTag.classList.remove("active_body")
+//    pageTag.classList.remove("blured")
+//    alpha.preventDefault()
+//});
+
+fullCloser.addEventListener("click", function() {
     navTag.classList.toggle("active")
     headTag.classList.remove("active_header")
     bodyactiveTag.classList.remove("active_body")
-});
+    pageTag.classList.remove("blured")
+})
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this")
+const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this, nav.about-nav")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -77,27 +89,6 @@ document.addEventListener("resize", function () {
   translated()
 })
 
-// call function
-const telTag = document.getElementById("tel")
-
-telTag.addEventListener("click", function (fork) {
-  window.location.href="tel:+52 33 2937 1055"
-  fork.preventDefault()
-});
-
-const mailTag = document.getElementById("email")
-const secMail = document.getElementById("sec_email")
-
-mailTag.addEventListener("click", function (tomato) {
-  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
-  tomato.preventDefault()
-})
-
-secMail.addEventListener("click", function(onion) {
-  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
-  onion.preventDefault()
-})
-
 // Header style on scroll
 const headerTag = document.querySelector("header")
 const logoTag = document.getElementById("logo-header")
@@ -112,7 +103,7 @@ document.addEventListener("scroll", function () {
     headerTag.classList.remove("scrolled")
     logoTag.classList.remove("new_logo")
   }
-});
+})
 
 // Copyright date to current year
 function currentYear() {
@@ -121,3 +112,18 @@ function currentYear() {
   document.getElementById('copyright').innerHTML = '&copy; Quebracho ' + n
 }
 currentYear()
+
+// call function
+//const telTag = document.getElementById("tel")
+
+//telTag.addEventListener("click", function (fork) {
+//  window.location.href="tel:+52 33 2937 1055"
+//  fork.preventDefault()
+//});
+
+const mailTag = document.getElementById("email")
+
+mailTag.addEventListener("click", function (tomato) {
+  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
+  tomato.preventDefault()
+})
