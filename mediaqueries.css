@@ -74,6 +74,7 @@
 
       div.about-sections {
         flex-direction: column;
+        margin-top: 24px;
       }
 
       div.about-info div.about-info-p {
