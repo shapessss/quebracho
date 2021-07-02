@@ -55,6 +55,7 @@
   --h4-size: 14px;
   --p-size: 24px;
   --secheader-size: 12px;
+  --h1-xl-size: 120px;
 }
 
 @media (max-width: 960px) {
@@ -62,6 +63,8 @@
     --pad: 24px 48px 24px 48px;
 
     --h1-size: 64px;
+
+    --h1-xl-size: 80px;
   }
 
   .photo img {
@@ -76,6 +79,7 @@
     --h3-size: 14px;
     --p-size: 18px;
     --global-pad: 14px;
+    --h1-xl-size: 40px;
   }
 }
 
@@ -883,7 +887,7 @@ div.modal-closer-btn a {
 }
 
 div.about-info {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   padding: var(--global-pad);
   position: absolute;
   top: 0;
@@ -891,6 +895,7 @@ div.about-info {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+  text-transform: uppercase;
 }
 
 div.about-info div.about-info-p {
@@ -907,38 +912,56 @@ div.about-info div.about-info-p figure {
 nav.about-nav {
   margin: 0;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  padding: var(--global-pad);
 }
 
 nav.about-nav a {
   display: block;
-  font-size: var(--h1-size);
-  color: var(--text);
-  background: var(--white-text);
-  margin: 14px;
-  padding: 0 40px;
-  text-align: center;
+  font-size: var(--h1-xl-size);
+  color: var(--white-text);
   font-family: 'Poppins';
   text-transform: uppercase;
   border-radius: 100px;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1;
 }
 
 div.list-links {
   position: fixed;
   top: 0;
   left: 0;
-  padding: var(--pad);
+  padding: var(--global-pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
   font-family: 'Poppins';
+  font-size: var(--h3-size);
+}
+
+div.list-links a {
+  color: var(--white-text);
+  transition: opacity 0.2s;
+}
+
+div.list-links a:hover {
+  opacity: 0.5;
+}
+
+div.figure {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  padding: var(--global-pad);
+}
+
+.right {
+  width: 35px;
+  height: 35px;
+  background-color: var(--white-text);
+  border-radius: 100px;
 }
 
 div.about-sections {
@@ -972,6 +995,11 @@ div.about-sections div.about-sections-x1 a, div.about-sections div.about-section
 nav.about-nav:hover a, div.about-sections div.about-sections-x1:hover a {
   opacity: 0.3;
 }
+
+nav.about-nav:hover a, div.about-sections div.about-sections-x1:hover a {
+  transition: opacity 0.2s;
+}
+
 
 nav.about-nav a:hover, div.about-sections div.about-sections-x1 a:hover {
   opacity: 1;
