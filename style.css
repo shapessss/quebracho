@@ -23,6 +23,16 @@
   100% { transform: translateY(0px); opacity: 1; animation-timing-function:ease-in-out; }
 }
 
+@keyframes float {
+  from { transform: translate(2%, -10%) rotate(-1deg); }
+  to { transform: translate(-2%, 5%) rotate(3deg); }
+}
+
+@-webkit-keyframes float {
+  from { transform: translate(2%, -10%) rotate(-1deg); }
+  to { transform: translate(-2%, 5%) rotate(3deg); }
+}
+
 :root {
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;
@@ -662,7 +672,7 @@ div.snap-container {
   position: relative;
   height: 100vh;
   overflow-y: scroll;
-  overflow-x: hidden;  
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
 }
@@ -684,7 +694,7 @@ div.about-hero-cta figcaption {
   font-family: 'Poppins';
 }
 
-div.about-hero-cta figcaption h2 {
+div.about-hero-cta figcaption h1 {
   font-size: var(--h1-size);
   font-weight: 600;
   margin: 0 0 14px 0;

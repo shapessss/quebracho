@@ -5,7 +5,7 @@ const headTag = document.querySelector("header")
 const bodyactiveTag = document.querySelector("body")
 
 toggleTag.addEventListener("click", function () {
-    navTag.classList.toggle("active") 
+    navTag.classList.toggle("active")
     headTag.classList.add("active_header")
     bodyactiveTag.classList.add("active_body")
     event.preventDefault()
@@ -18,7 +18,7 @@ toggleCloser.addEventListener("click", function () {
 });
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption")
+const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -31,7 +31,7 @@ const fadeIn = function () {
     
     
     if (tagTop < window.innerHeight) {
-      tag.style.animation = "fadeIn 1s 0.5s both"
+      tag.style.animation = "fadeIn 0.5s 0.5s both"
     }
   })
 }
@@ -46,10 +46,6 @@ document.addEventListener("wheel", function (delta) {
   fadeIn()
   delta.preventDefault()
 })
-
-window.addEventListener('touchstart', function () {
-  fadeIn()
-});
 
 window.addEventListener("resize", function () {
   fadeIn()
