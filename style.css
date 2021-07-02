@@ -861,7 +861,7 @@ div.about-info {
 }
 
 div.about-info div.about-info-p {
-  max-width: 55%;
+  max-width: 100%;
   font-family: 'Poppins';
   font-weight: 400;
   margin-top: 54px;
