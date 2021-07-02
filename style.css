@@ -839,16 +839,13 @@ div.full-menu {
   top: -100vh;
   z-index: 999;
   transform: translateY(0%);
-  transition: opacity 0.2s ease 0.1s;
   overflow: hidden;
   color: var(--white-text);
-  opacity: 0; 
 }
 
 div.full-menu.active {
   transform: translateY(100vh);
   color: var(--white-text);
-  opacity: 1;
 }
 
 #when-modal.active {
