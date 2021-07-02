@@ -113,6 +113,9 @@ div.page {
   z-index: 2;
   background-color: var(--bg);
   transition: background-color 0.3s, filter 0.3s;
+  -webkit-transition: background-color 0.3s, filter 0.3s;
+  -moz-transition: background-color 0.3s, filter 0.3s;
+  -ms-transition: background-color 0.3s, filter 0.3s;
 }
 
 div.page.blured {
@@ -882,9 +885,6 @@ div.about-info {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 div.about-info div.about-info-p {
@@ -904,6 +904,9 @@ nav.about-nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 nav.about-nav a {
