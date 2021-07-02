@@ -112,10 +112,10 @@ div.page {
   position: relative;
   z-index: 2;
   background-color: var(--bg);
-  transition: background-color 0.2s ease-out, filter 0.2s ease-out;
-  -webkit-transition: background-color 0.2s ease-out, filter 0.2s ease-out;
-  -moz-transition: background-color 0.2s ease-out, filter 0.2s ease-out;
-  -ms-transition: background-color 0.2s ease-out, filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
+  -webkit-transition: filter 0.2s ease-out;
+  -moz-transition: filter 0.2s ease-out;
+  -ms-transition: filter 0.2s ease-out;
 }
 
 div.page.blured {
@@ -124,11 +124,8 @@ div.page.blured {
   -moz-filter: blur(6px) brightness(0.8);
   -o-filter: blur(6px) brightness(0.8);
   -ms-filter: blur(6px) brightness(0.8);
-
   -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);
-  -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000;
   transform: translate3d(0,0,0);
