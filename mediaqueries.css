@@ -93,17 +93,10 @@
         display: none;
       }
 
-      div.page.blured {
-        filter: none;
-        -webkit-filter: none;
-        -moz-filter: none;
-        -o-filter: none;
-        -ms-filter: none;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translate3d(0,0,0);
-        backface-visibility: hidden;
-        perspective: 1000;
-        transform: translate3d(0,0,0);
-        transform: translateZ(0);
+      div.page {
+        transition: filter 0.1s ease-out;
+        -webkit-transition: filter 0.1s ease-out;
+        -moz-transition: filter 0.1s ease-out;
+        -ms-transition: filter 0.1s ease-out;
       }
 }
