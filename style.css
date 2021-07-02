@@ -36,6 +36,7 @@
 :root {
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;
+  --modal-pad: 24px;
   --footer-pad: 10px;
   --btn-pad: 16px 34px 16px 34px;
   --bg: #ffffff;
@@ -915,7 +916,9 @@ nav.about-nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: var(--global-pad);
+  padding-left: var(--modal-pad);
+  margin-top: 0;
+  margin-bottom: var(--modal-pad);
 }
 
 nav.about-nav a {
@@ -955,7 +958,9 @@ div.figure {
   bottom: 0;
   right: 0;
   position: fixed;
-  padding: var(--global-pad);
+  padding-right: var(--modal-pad);
+  margin-top: 0;
+  margin-bottom: var(--modal-pad);
 }
 
 .right {
