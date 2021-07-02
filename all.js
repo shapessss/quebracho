@@ -42,15 +42,15 @@ document.addEventListener("scroll", function () {
   fadeIn()
 })
 
-window.addEventListener("touchstart", function () {
+document.addEventListener("touchstart", function () {
   fadeIn()
 })
 
-window.addEventListener("touchmove", function () {
+document.addEventListener("touchmove", function () {
   fadeIn()
 })
 
-window.addEventListener("touchend", function () {
+document.addEventListener("touchend", function () {
   fadeIn()
 })
 
