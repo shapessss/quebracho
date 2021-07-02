@@ -94,9 +94,9 @@
       }
 
       div.page {
-        transition: filter 0.1s ease-out;
-        -webkit-transition: filter 0.1s ease-out;
-        -moz-transition: filter 0.1s ease-out;
-        -ms-transition: filter 0.1s ease-out;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
       }
 }
