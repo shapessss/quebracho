@@ -79,4 +79,12 @@
       div.about-info div.about-info-p {
         display: none;
       }
+
+      div.about-sections-x1 h3 {
+        margin-bottom: 0;
+      }
+
+      div.about-sections-x1 {
+        margin: 0 0 24px 0;
+      }
 }
