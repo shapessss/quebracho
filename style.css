@@ -916,9 +916,9 @@ nav.about-nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-left: var(--modal-pad);
+  padding-left: var(--global-pad);
   margin-top: 0;
-  margin-bottom: var(--modal-pad);
+  margin-bottom: var(--global-pad);
 }
 
 nav.about-nav a {
@@ -958,9 +958,9 @@ div.figure {
   bottom: 0;
   right: 0;
   position: fixed;
-  padding-right: var(--modal-pad);
+  padding-right: var(--global-pad);
   margin-top: 0;
-  margin-bottom: var(--modal-pad);
+  margin-bottom: var(--global-pad);
 }
 
 .right {
