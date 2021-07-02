@@ -45,12 +45,11 @@ document.addEventListener("scroll", function () {
 document.addEventListener("wheel", function (delta) {
   fadeIn()
   delta.preventDefault()
-
-  document.addEventListener("touchmove", function () {
-    fadeIn()
-    delta.preventDefault()
-  })
 })
+
+window.addEventListener('touchstart', function () {
+  fadeIn()
+});
 
 window.addEventListener("resize", function () {
   fadeIn()
