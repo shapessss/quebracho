@@ -42,8 +42,9 @@ document.addEventListener("scroll", function () {
   fadeIn()
 })
 
-document.addEventListener("wheel", function () {
+document.addEventListener("wheel", function (delta) {
   fadeIn()
+  delta.preventDefault()
 })
 
 window.addEventListener("resize", function () {
