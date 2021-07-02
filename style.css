@@ -969,10 +969,6 @@ div.about-sections div.about-sections-x1 a, div.about-sections div.about-section
   color: var(--white-text);
 }
 
-nav.about-nav a, div.about-sections div.about-sections-x1 a {
-  transition: .2s ease;
-}
-
 nav.about-nav:hover a, div.about-sections div.about-sections-x1:hover a {
   opacity: 0.3;
 }
