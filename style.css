@@ -693,6 +693,7 @@ div.about-hero-cta p.p-small {
   font-weight: 400;
   text-align: justify;
   text-align-last: center;
+  text-align: -webkit-center;
 }
 
 div.about-hero-cta figcaption p {
