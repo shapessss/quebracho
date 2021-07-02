@@ -33,6 +33,7 @@
   --highlight: #ffffdd;
   --text: #000000;
   --white-text: #ffffff;
+  --eyes-text: #2e2e2e;
   --nav-text: #000000;
   --link-color: #0000ff;
   --selection-color: #e0e0e0;
@@ -84,6 +85,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding-bottom: 147px;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.no-padding {
@@ -690,10 +692,12 @@ div.about-hero-cta figcaption h2 {
 
 div.about-hero-cta p.p-small {
   font-size: var(--h3-size);
-  font-weight: 400;
-  text-align: justify;
-  text-align-last: center;
-  text-align: -webkit-justify;
+  font-weight: 500;
+  text-align: center;
+  text-align: -webkit-center;
+  letter-spacing: -0.025em;
+  line-height: 1.5;
+  color: var(--eyes-text);
 }
 
 div.about-hero-cta figcaption p {

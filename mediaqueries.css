@@ -67,4 +67,8 @@
       div.about__section section p{
         font-size: inherit;
       }
+
+      div.about-hero-cta figcaption {
+        padding: var(--global-pad);
+      }
 }
