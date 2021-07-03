@@ -855,6 +855,7 @@ div.terms-conditions h1 {
   z-index: 999;
   transform: translateY(0%);
   color: var(--text);
+  overflow: hidden;
 }
 
 #toggle-menu.active {
