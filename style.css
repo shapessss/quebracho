@@ -909,7 +909,8 @@ div.about-info div.about-info-p figure {
 }
 
 nav.about-nav {
-  position: absolute;
+  position: fixed;
+  backface-visibility: hidden;
   bottom: 0;
   left: 0;
   padding-left: var(--global-pad);
