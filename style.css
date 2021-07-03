@@ -849,7 +849,7 @@ div.terms-conditions h1 {
 div.full-menu {
   position: absolute;
   display: flex;
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   top: -100vh;
   z-index: 999;
