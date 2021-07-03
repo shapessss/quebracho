@@ -849,6 +849,7 @@ div.terms-conditions h1 {
 #toggle-menu {
   background: var(--text);
   position: fixed;
+  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   top: -100vh;
