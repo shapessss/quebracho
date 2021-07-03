@@ -855,7 +855,7 @@ div.terms-conditions h1 {
   z-index: 999;
   transform: translateY(0%);
   color: var(--text);
-  overflow: hidden;
+  
 }
 
 #toggle-menu.active {
@@ -869,6 +869,8 @@ div.terms-conditions h1 {
   padding-left: var(--global-pad);
   margin-top: 0;
   margin-bottom: var(--global-pad);
+
+  overflow: hidden;
 
   font-family: 'Poppins';
   font-size: var(--h1-xl-size);
