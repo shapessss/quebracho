@@ -849,6 +849,7 @@ div.terms-conditions h1 {
 div.full-menu {
   position: fixed;
   display: flex;
+  height: 100vh;
   width: 100vw;
   top: -100vh;
   z-index: 999;
@@ -891,7 +892,7 @@ div.about-info {
   background: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   text-transform: uppercase;
   pointer-events: auto;
