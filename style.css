@@ -847,18 +847,20 @@ div.terms-conditions h1 {
 
 /* Modal */
 div.full-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
-  height: 85vh;
+  height: 100vh;
   width: 100vw;
   top: -100vh;
   z-index: 999;
   transform: translateY(0%);
   color: var(--white-text);
+  opacity: 0;
 }
 
 div.full-menu.active {
-  transform: translateY(100vh);
+  opacity: 1;
+  top: 0;
   color: var(--white-text);
 }
 
