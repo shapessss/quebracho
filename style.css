@@ -868,6 +868,7 @@ div.about-info {
   height: 100vh;
   text-transform: uppercase;
   pointer-events: auto;
+  visibility: visible;
 }
 
 div.about-info div.about-info-p {
