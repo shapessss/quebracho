@@ -849,18 +849,16 @@ div.terms-conditions h1 {
 div.full-menu {
   position: fixed;
   display: flex;
-  height: 100vh;
   width: 100vw;
   top: -100vh;
   z-index: 999;
+  overflow-x: hidden;
   transform: translateY(0%);
   color: var(--white-text);
-  opacity: 0;
 }
 
 div.full-menu.active {
-  opacity: 1;
-  top: 0;
+  transform: translateY(100vh);
   color: var(--white-text);
 }
 
