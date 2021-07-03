@@ -56,7 +56,7 @@
   --h4-size: 14px;
   --p-size: 24px;
   --secheader-size: 12px;
-  --h1-xl-size: 120px;
+  --h1-xl-size: 110px;
 }
 
 @media (max-width: 960px) {
@@ -124,11 +124,11 @@ div.page {
 }
 
 div.page.blured {
-  filter: blur(6px) brightness(0.8);
-  -webkit-filter: blur(6px) brightness(0.8);
-  -moz-filter: blur(6px) brightness(0.8);
-  -o-filter: blur(6px) brightness(0.8);
-  -ms-filter: blur(6px) brightness(0.8);
+  filter: blur(3px) brightness(0.8);
+  -webkit-filter: blur(3px) brightness(0.8);
+  -moz-filter: blur(3px) brightness(0.8);
+  -o-filter: blur(3px) brightness(0.8);
+  -ms-filter: blur(3px) brightness(0.8);
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0,0,0);
   backface-visibility: hidden;
@@ -847,9 +847,9 @@ div.terms-conditions h1 {
 
 /* Toggle menu */
 #toggle-menu {
-  background: var(--text);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
-  height: 100vh;
+  min-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   top: -100vh;
@@ -913,7 +913,10 @@ div.terms-conditions h1 {
 }
 
 .toggle-nav a {
-  transition: opacity 0.5s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .toggle-nav:hover a {
@@ -922,4 +925,5 @@ div.terms-conditions h1 {
 
 .toggle-nav a:hover {
   opacity: 1;
+  transform: translate(0, 10px);
 }
