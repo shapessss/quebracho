@@ -864,21 +864,6 @@ div.terms-conditions h1 {
   color: var(--white-text);
 }
 
-.toggle-content {
-  background: var(--text);
-  position: absolute;
-  top: 85px;
-  left: 0;
-  overflow: scroll;
-  height: 100vh;
-  width: 100vw;
-}
-
-.toggle-big {
-  padding-top: 20px;
-  padding: 1px 5% 40px;
-}
-
 .toggle-nav {
   position: fixed;
   bottom: 0;
