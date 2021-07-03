@@ -849,7 +849,7 @@ div.terms-conditions h1 {
 #toggle-menu {
   background: var(--text);
   position: fixed;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   top: -100vh;
   z-index: 999;
@@ -868,8 +868,6 @@ div.terms-conditions h1 {
   padding-left: var(--global-pad);
   margin-top: 0;
   margin-bottom: var(--global-pad);
-
-  height: calc(var(--vh, 1vh) * 20);
 
   font-family: 'Poppins';
   font-size: var(--h1-xl-size);
