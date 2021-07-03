@@ -875,6 +875,8 @@ div.terms-conditions h1 {
 
   font-family: 'Poppins';
   font-size: var(--h1-xl-size);
+  font-weight: 400;
+
   display: flex;
   flex-direction: column;
 
@@ -908,4 +910,16 @@ div.terms-conditions h1 {
 
 .toggle-nav a, .list-links a {
   color: var(--white-text);
+}
+
+.toggle-nav a {
+  transition: opacity 0.5s;
+}
+
+.toggle-nav:hover a {
+  opacity: 0.2;
+}
+
+.toggle-nav a:hover {
+  opacity: 1;
 }
