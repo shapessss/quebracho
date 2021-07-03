@@ -852,7 +852,7 @@ div.full-menu {
   width: 100vw;
   top: -100vh;
   z-index: 999;
-  overflow-x: hidden;
+  overflow: hidden;
   transform: translateY(0%);
   color: var(--white-text);
 }
