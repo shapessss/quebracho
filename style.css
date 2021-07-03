@@ -885,9 +885,10 @@ div.terms-conditions h1 {
 
   font-family: 'Poppins';
   font-size: var(--h1-xl-size);
+  display: flex;
+  flex-direction: column;
 }
 
 .toggle-nav a {
   color: var(--white-text);
-  display: block;
 }
