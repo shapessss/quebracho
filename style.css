@@ -889,6 +889,5 @@ div.terms-conditions h1 {
 
 .toggle-nav a {
   color: var(--white-text);
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
