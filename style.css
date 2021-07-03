@@ -864,14 +864,14 @@ div.terms-conditions h1 {
 .toggle-content {
   background: var(--text);
   position: absolute;
-  top: 0;
+  top: 85px;
   left: 0;
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 85px);
   width: 100vw;
 }
 
-.big {
+.toggle-big {
   padding: var(--global-pad);
   line-height: 1;
 }
