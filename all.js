@@ -1,8 +1,11 @@
 const toggleTag = document.querySelector("a#toggle-activator")
 const contentTag = document.querySelector("#toggle-menu")
+const bodyOverflow = document.querySelector("body")
 
-toggleTag.addEventListener("click", function () {
+toggleTag.addEventListener("click", function (delta) {
     contentTag.classList.toggle("active")
+    bodyOverflow.classList.add("active-body")
+    delta.preventDefault()
 })
 
 //fullCloser.addEventListener("click", function() {
