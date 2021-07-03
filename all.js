@@ -5,12 +5,12 @@ toggleTag.addEventListener("click", function () {
     contentTag.classList.toggle("active")
 })
 
-fullCloser.addEventListener("click", function() {
-    navTag.classList.toggle("active")
-    headTag.classList.remove("active_header")
-    bodyactiveTag.classList.remove("active_body")
-    pageTag.classList.remove("blured")
-})
+//fullCloser.addEventListener("click", function() {
+//    navTag.classList.toggle("active")
+//    headTag.classList.remove("active_header")
+//    bodyactiveTag.classList.remove("active_body")
+//    pageTag.classList.remove("blured")
+//})
 
 // text animation script
 const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this, nav.about-nav")
@@ -110,3 +110,6 @@ mailTag.addEventListener("click", function (tomato) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   tomato.preventDefault()
 })
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
