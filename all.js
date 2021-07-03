@@ -1,26 +1,9 @@
-const toggleTag = document.querySelector("a#modal-activator")
-//const toggleCloser = document.querySelector("div#modal-closer")
-const fullCloser = document.querySelector(".about-info")
-const navTag = document.querySelector("div.full-menu")
-const headTag = document.querySelector("header")
-const bodyactiveTag = document.querySelector("body")
-const pageTag = document.querySelector(".page")
+const toggleTag = document.querySelector("a#toggle-activator")
+const contentTag = document.querySelector("#toggle-menu")
 
-toggleTag.addEventListener("click", function (delta) {
-    navTag.classList.toggle("active")
-    headTag.classList.add("active_header")
-    bodyactiveTag.classList.add("active_body")
-    pageTag.classList.add("blured")
-    delta.preventDefault()
+toggleTag.addEventListener("click", function () {
+    contentTag.classList.toggle("active")
 })
-
-//toggleCloser.addEventListener("click", function (alpha) {
-//    navTag.classList.toggle("active")
-//    headTag.classList.remove("active_header")
-//    bodyactiveTag.classList.remove("active_body")
-//    pageTag.classList.remove("blured")
-//    alpha.preventDefault()
-//});
 
 fullCloser.addEventListener("click", function() {
     navTag.classList.toggle("active")
