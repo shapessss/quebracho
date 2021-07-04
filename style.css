@@ -901,6 +901,7 @@ div.terms-conditions h1 {
   font-family: 'Poppins';
   font-weight: 400;
   font-size: var(--h4-size);
+  text-transform: uppercase;
 }
 
 .circle-wrapper {
