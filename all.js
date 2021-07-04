@@ -108,19 +108,26 @@ function currentYear() {
 currentYear()
 
 // call function
-//const telTag = document.getElementById("tel")
+const telTag = document.getElementById("tel")
 
-//telTag.addEventListener("click", function (fork) {
-//  window.location.href="tel:+52 33 2937 1055"
-//  fork.preventDefault()
-//});
+telTag.addEventListener("click", function (fork) {
+  window.location.href="tel:+52 33 2937 1055"
+  fork.preventDefault()
+})
 
 const mailTag = document.getElementById("email")
+const mailsecTag = document.getElementById("email_sec")
 
 mailTag.addEventListener("click", function (tomato) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   tomato.preventDefault()
 })
+
+mailsecTag.addEventListener("click", function (pepper) {
+  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
+  pepper.preventDefault()
+})
+
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);

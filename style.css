@@ -857,11 +857,16 @@ div.terms-conditions h1 {
   transform: translateY(0%);
   color: var(--text);
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
 }
 
 #toggle-menu.active {
   transform: translateY(100vh);
   color: var(--white-text);
+  opacity: 1;
 }
 
 .toggle-nav {
@@ -889,6 +894,13 @@ div.terms-conditions h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: auto;
+}
+
+.list-links a {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: var(--h4-size);
 }
 
 .circle-wrapper {
