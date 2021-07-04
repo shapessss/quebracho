@@ -107,4 +107,8 @@
         -o-filter: blur(0) brightness(0.6);
         -ms-filter: blur(0) brightness(0.6);
       }
+
+      .circle-wrapper {
+        display: none;
+      }
 }
