@@ -914,11 +914,17 @@ div.terms-conditions h1 {
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
-  background: var(--bg);
-  border-radius: 100px;
   cursor: pointer;
+}
+
+.circle_logo {
+  background-image: url("quebracho-toggle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }
 
 .toggle-nav a, .list-links a {
