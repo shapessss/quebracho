@@ -49,25 +49,23 @@
             </header>
 
             <div class="page-top">
-                <label>
+                <p>
                     Contacto
-                </label>
+                </p>
             </div>
 
-            <div class="contact-container">
-                <div class="full-text">
-                    <h3>Consultas generales:</h3>
-
-                    <p>Cuentanos sobre tu proyecto, queremos ayudarte a hacer esa idea una realidad.</p>
-
-                    <a href="">info@quebracho.mx</a>
+            <div class="contact-headers">
+                <div class="headers-social right-line">
+                    <h2>Social</h2>
                 </div>
 
-                <div class="full-image"></div>
+                <div class="headers-location">
+                    <h2>Localizados</h2>
+                </div>
             </div>
 
             <div class="location-container" id="lines">
-                <div class="full-text">
+                <div class="full-text right-line">
                     <h3 class="full-text-center">Social</h3>
 
                     <ul id="social-blank">              
@@ -91,6 +89,66 @@
                     <a href="https://maps.google.com" target="_blank">Ver mapa</a>
                 </div>
             </div>
+
+            <div class="contact-container">
+                <div class="full-text right-line">
+                    <h3>Consultas generales:</h3>
+
+                    <p>Cuentanos sobre tu proyecto, queremos ayudarte a hacer esa idea una realidad.</p>
+
+                    <form action="https://formspree.io/f/mzbyvwjv" method="POST">
+                        <label>
+                            Nombre:
+                            <input type="text" name="name" placeholder="Nombre completo" required>
+                        </label>
+
+                        <label>
+                            Correo electrónico:
+                            <input type="text" name="_replyto" required>
+                        </label>
+
+                        <label>
+                            Teléfono:
+                            <input type="text" name="phone" placeholder="(+52) 000 0000 000" required>
+                        </label>
+
+                        <label>
+                            Servicio:
+                            <select name="service" required>
+                                <option value="0">Selecciona un servicio</option>
+                                <option value="1">Diseño gráfico</option>
+                                <option value="2">Diseño de interiores</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Deja tu mensaje:
+                            <textarea name="message"></textarea>
+                        </label>
+
+                        <button type="submit" class="form-button">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="full-image"></div>
+            </div>
+
+            <aside class="about-services">
+                <div class="service-list">
+                    <ul>
+                        <li>Brading</li>
+                        <li>Naming</li>
+                        <li>Resgistro de marca</li>
+                        <li>Diseño gráfico</li>
+                        <li>Diseño Web</li>
+                        <li>UI/UX</li>
+                        <li>Estrategia</li>
+                        <li>Fotografía</li>
+                        <li>Audiovisuales</li>
+                        <li>Diseño de interiores</li>
+                    </ul>
+                </div>
+            </aside>
 
             <a href="estudio.html">
                 <div class="we-are">

@@ -81,6 +81,8 @@
   --p-size: 24px;
   --secheader-size: 12px;
   --h1-xl-size: 96px;
+
+  --h1-about: 96px;
 }
 
 @media (max-width: 960px) {
@@ -90,6 +92,8 @@
     --h1-size: 64px;
 
     --h1-xl-size: 80px;
+
+    --h1-about: 64px;
   }
 
   .photo img {
@@ -105,6 +109,7 @@
     --p-size: 18px;
     --global-pad: 14px;
     --h1-xl-size: 40px;
+    --h1-about: 45px;
   }
 }
 
@@ -116,6 +121,10 @@
     --link-color: #ffe100;
   }
 }*/
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Hoefler Text, Arial;
@@ -145,6 +154,10 @@ div.page {
   -webkit-transition: filter 0.2s ease-out;
   -moz-transition: filter 0.2s ease-out;
   -ms-transition: filter 0.2s ease-out;
+}
+
+#no {
+  height: 100vh;
 }
 
 div.page.blured {
@@ -687,7 +700,7 @@ div.item:hover div.item_title {
 
 /* project styles */
 section.project-container {
-  width: 70%;
+  padding: var(--global-pad);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -741,7 +754,67 @@ figcaption.small a:hover, div.full-text a:hover {
 }
 
 /*About page styles */
+/* New styles */
+section.quotes {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  text-align: center;
+
+  font-family: 'Poppins';
+}
+
+div.next_quote {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: var(--global-pad);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.quotes h1 {
+  font-size: var(--h1-size);
+  font-weight: 600;
+  letter-spacing: -1.6px;
+  margin-bottom: 10px;
+}
+
+section.quotes h3 {
+  font-size: var(--h3-size);
+  font-weight: 400;
+}
+
+section.quotes p {
+  font-size: var(--h4-size);
+  transition: opacity 0.5s;
+}
+
+div.next_quote img {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  transition: opacity 0.3s;
+}
+
+img.next:hover {
+  opacity: 0.5;
+}
+
+img.prev:hover {
+  opacity: 0.5;
+}
+
+/* New styles */
+
 div.snap-container {
+  background-color: var(--bg);
   position: relative;
   height: 100vh;
   overflow-y: scroll;
@@ -756,6 +829,7 @@ aside.snap-section {
 }
 
 aside.about-hero {
+  color: var(--text);
   display: flex;
   height: 100vh;
   align-items: center;
@@ -768,9 +842,10 @@ div.about-hero-cta figcaption {
 }
 
 div.about-hero-cta figcaption h1 {
-  font-size: var(--h1-size);
+  font-size: var(--h1-about);
   font-weight: 600;
   margin: 0 0 14px 0;
+  letter-spacing: -1.6px;
 }
 
 div.about-hero-cta p.p-small {
@@ -987,14 +1062,18 @@ div.page-top {
   padding-top: var(--pad);
 }
 
-div.contact-container, div.location-container {
+div.contact-container, div.location-container, div.contact-headers {
   display: flex;
   flex-direction: row;
 }
 
-div.contact-container div, div.location-container div {
+div.contact-container div, div.location-container div, div.contact-headers div {
   width: 50%;
   border-bottom: 1px solid var(--text);
+}
+
+.right-line {
+  border-right: 1px solid var(--text);
 }
 
 div.full-image {
@@ -1002,6 +1081,9 @@ div.full-image {
   background-image: url("quebracho-trunks.gif");
   background-size: cover;
   background-position: center;
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 div.contact-container div.full-text {
@@ -1009,7 +1091,7 @@ div.contact-container div.full-text {
 }
 
 div.location-container div.full-text {
-  padding: var(--pad);
+  padding: var(--global-pad);
 }
 
 div.we-are {
@@ -1026,4 +1108,93 @@ div.we-are {
 div.we-are:hover {
   background-color: var(--text);
   color: var(--white-text);
+}
+
+div.contact-headers h2 {
+  padding: var(--global-pad);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+aside.about-services {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--global-pad);
+  border-bottom: 1px solid var(--text);
+  height: 430px;
+}
+
+aside.about-services div.service-list {
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Contact form */
+input, textarea {
+  width: 100%;
+  background-color: var(--bg);
+  border: 2px solid var(--text);
+  border-radius: 3px;
+  color: var(--text);
+  font-family: 'Poppins';
+  font-weight: 600;
+  padding: 8px 16px 8px 16px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 16px 0;
+  font-size: var(--h4-size);
+}
+
+input {
+  height: 60px;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+select {
+    background: var(--bg);
+    border: 2px solid var(--text);
+    border-radius: 3px;
+    outline: none;
+    font-size: var(--h4-size);
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    width: 100%;
+    font-family: 'Poppins';
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+button.form-button {
+  background-color: var(--text);
+  color: var(--white-text);
+  padding: 8px 16px 8px 16px;
+  border: none;
+  transition: transform 0.1s;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: var(--h3-size);
+  font-weight: 600;
+}
+
+button.form-button:active {
+  transform: translate(0, -2px);
+}
+
+input:focus, textarea:focus {
+  border: 3px solid var(--text);
+  outline: none;
 }
