@@ -756,6 +756,10 @@ figcaption.small a:hover, div.full-text a:hover {
   text-decoration: underline;
 }
 
+div.full-text h3.full-text-center {
+  display: none;
+}
+
 /*About page styles */
 /* New styles */
 section.quotes {
