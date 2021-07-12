@@ -1190,11 +1190,15 @@ button.form-button {
   color: var(--white-text);
   padding: 8px 16px 8px 16px;
   border: none;
-  transition: transform 0.1s;
+  transition: transform 0.1s, box-shadow 0.3s;
   cursor: pointer;
-  border-radius: 100px;
-  font-size: var(--h3-size);
+  border-radius: 3%;
+  font-size: var(--h4-size);
   font-weight: 600;
+}
+
+button.form-button:hover {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 button.form-button:active {
