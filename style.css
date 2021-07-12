@@ -204,11 +204,14 @@ div.sec_header div.contact-links {
 header {
   top: 0;
   width: 100vw;
+  height: 90px;
   z-index: 3;
   padding: var(--h4-size) var(--global-pad);
   background-color: var(--bg);
   font-variation-settings: "wght" 600;
   align-items: center;
+
+  font-family: 'Poppins';
 
   position: sticky;
   position: -webkit-sticky;
@@ -295,8 +298,6 @@ div.lang-link a:first-child:after {
 
 nav, nav.right-nav {
   flex: 1;
-
-  font-family: 'Poppins';
 }
 
 .container {
