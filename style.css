@@ -218,7 +218,7 @@ header {
 }
 
 header.scrolled {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 header.active_header {
@@ -251,15 +251,15 @@ header h1 a {
   width: 100px;
   */
   /* new size */
-  height: 40px;
-  width: 110px;
+  height: 50px;
+  width: 120px;
 }
 
 #logo-header.new_logo {
   background-image: url('quebracho-scroll.svg');
   height: 40px;
   width: 110px;
-  animation: fadeIn 0.5s 0.5s both;
+  animation: fadeIn 0.2s 0.2s both;
 }
 
 nav {
@@ -295,6 +295,8 @@ div.lang-link a:first-child:after {
 
 nav, nav.right-nav {
   flex: 1;
+
+  font-family: 'Poppins';
 }
 
 .container {
