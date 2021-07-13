@@ -123,4 +123,28 @@
       section.quotes {
         width: 80%;
       }
+      
+      div.contact-headers {
+        display: none;
+      }
+
+      div.contact-container, div.location-container {
+        display: block;
+      }
+
+      div.contact-container div, div.location-container div {
+        width: 100%;
+        border: none;
+        margin-bottom: 24px;
+      }
+
+      div.full-image {
+        display: none;
+      }
+
+      div.page-top {
+        line-height: 1.5;
+        font-size: 4.5vw;
+        margin-bottom: var(--h4-size);
+      }
 }
