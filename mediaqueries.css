@@ -147,4 +147,8 @@
         font-size: 4.5vw;
         margin-bottom: var(--h4-size);
       }
+
+      div.full-text h3.full-text-center {
+        display: block;
+      }
 }
