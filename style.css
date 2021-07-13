@@ -724,6 +724,10 @@ div.project__cover {
   margin-left: auto
 }
 
+div.half-cover {
+  height: 65vh;
+}
+
 div.project__cover img {
   width: 100%;
   height: 100%;
