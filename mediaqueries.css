@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+    body {
+      padding-bottom: 200px;
+    }
+
     div.cursors {
       display: none;
     }
@@ -150,5 +154,21 @@
 
       div.full-text h3.full-text-center {
         display: block;
+      }
+
+      div.main-footer {
+        display: block;
+      }
+
+      div.main-footer div {
+        margin-top: 20px;
+      }
+
+      div.social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
       }
 }
