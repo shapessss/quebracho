@@ -93,6 +93,10 @@
         margin: 0 0 24px 0;
       }
 
+      section.quotes h1 {
+        letter-spacing: 0;
+      }
+
       div.left-nav-x1 a {
         display: none;
       }
