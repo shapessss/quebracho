@@ -24,7 +24,7 @@ contentTag.addEventListener("click", function() {
 //})
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this, nav.about-nav")
+const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
