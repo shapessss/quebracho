@@ -175,4 +175,24 @@
         align-items: center;
         text-align: left;
       }
+
+      div.small-content-wrap {
+        padding-top: 24px;
+        padding-bottom: 14px;
+        flex-direction: column;
+        padding-left: var(--global-pad);
+        padding-right: var(--global-pad);
+      }
+
+      div.small-content-wrap div {
+        width: 100%;
+      }
+
+      div.small-two {
+        margin-right: 0;
+      }
+
+      div.small-two:last-child {
+        margin-top: 24px;
+      }
 }
