@@ -857,6 +857,10 @@ aside.about-hero {
   text-align: center;
 }
 
+div.about-hero-cta {
+  transform: translateY(-50px);
+}
+
 div.about-hero-cta figcaption {
   font-family: 'Poppins';
 }
@@ -1222,6 +1226,7 @@ aside.mainpage-services {
   height: 620px;
   padding: 64px 48px 64px 48px;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(240, 77, 13);
