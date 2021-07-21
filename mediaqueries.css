@@ -200,6 +200,7 @@
 
       aside.mainpage-services {
         height: auto;
+        touch-action: none;
       }
 
       div.services-list li {
