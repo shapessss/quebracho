@@ -204,7 +204,6 @@
 
       div.services-list li {
         font-size: calc(1.21995rem + 1.83753vw);
-        touch-action: none;
       }
 
       div.services-list ul {
