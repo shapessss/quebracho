@@ -180,6 +180,8 @@
         padding-top: 24px;
         padding-bottom: 14px;
         flex-direction: column;
+        margin: 0;
+        width: 100vw;
         padding-left: var(--global-pad);
         padding-right: var(--global-pad);
       }
