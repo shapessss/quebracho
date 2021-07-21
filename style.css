@@ -928,6 +928,9 @@ footer {
   width: 100vw;
   font-size: var(--h4-size);
   z-index: 1;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 400;
 }
 
 footer a {
@@ -963,9 +966,6 @@ div.sec-footer {
   justify-content: space-between;
   align-items: center;
   padding-top: var(--footer-pad);
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 12px;
   color: var(--line-footer)
 }
 
