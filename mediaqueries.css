@@ -1,5 +1,7 @@
 @media (max-width: 600px) {
-    
+    body {
+      padding-bottom: 70px;
+    }
 
     div.cursors {
       display: none;

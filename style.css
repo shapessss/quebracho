@@ -62,7 +62,7 @@
   --footer-pad: 10px;
   --btn-pad: 16px 34px 16px 34px;
   --bg: #ffffff;
-  --line-footer: #aaaaaa;
+  --line-footer: #919191;
   --highlight: #ffffdd;
   --text: #000000;
   --white-text: #ffffff;
@@ -133,7 +133,7 @@ body {
 
   background-color: var(--bg);
   color: var(--text);
-  padding-bottom: 147px;
+  padding-bottom: 80px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -924,8 +924,9 @@ footer {
   background-color: var(--bg);
   left: 0;
   bottom: 0;
-  padding: var(--global-pad);
+  padding: 0 var(--global-pad);
   width: 100vw;
+  height: 60px;
   font-size: var(--h4-size);
   z-index: 1;
   font-family: 'Poppins';
@@ -952,21 +953,13 @@ div.main-footer {
   padding-bottom: var(--footer-pad);
 }
 
-div.shrink-text {
-  flex: 0 0 66.666667%;
-}
-
-div.social-links {
-  align-items: flex-start;
-}
-
 div.sec-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: var(--footer-pad);
-  color: var(--line-footer)
+  color: var(--line-footer);
 }
 
 div.terms-conditions {
