@@ -1235,6 +1235,10 @@ aside.mainpage-services {
 
 div.services-list {
   width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.services-list ul {
