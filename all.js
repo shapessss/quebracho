@@ -118,11 +118,6 @@ telTag.addEventListener("click", function (fork) {
 const mailTag = document.getElementById("email")
 const mailsecTag = document.getElementById("email_sec")
 
-mailTag.addEventListener("click", function (tomato) {
-  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
-  tomato.preventDefault()
-})
-
 mailsecTag.addEventListener("click", function (pepper) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   pepper.preventDefault()
