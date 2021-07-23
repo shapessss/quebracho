@@ -218,4 +218,8 @@
       div.snap-container {
         display: block;
       }
+
+      .menu__sec {
+        display: none;
+      }
 }
