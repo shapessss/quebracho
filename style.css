@@ -834,6 +834,52 @@ img.prev:hover {
 
 /* New styles */
 
+/*Styles for mobile about */
+.slides {
+  /* We set the scroll snapping */
+  scroll-snap-type: x mandatory;
+  /* Necessary for mobile scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* For layout purposes */
+  display: flex;
+  /* To allow horizontal scrolling */
+  overflow-x: scroll;
+}
+
+.slides h4 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+.footer-arrow {
+  padding-left: 10px;
+}
+
+.footer-arrow:first-child {
+  padding-right: 10px;
+}
+
+.slides section {
+  /* For styling purposes */
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Set where the snapping should happen */
+  scroll-snap-align: start;
+}
+/*Styles for mobile about */
+
 div.snap-container {
   background-color: var(--bg);
   position: relative;
@@ -842,6 +888,7 @@ div.snap-container {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
+  display: none;
 }
 
 aside.snap-section {
