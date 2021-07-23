@@ -311,6 +311,7 @@ nav, nav.right-nav {
 }
 
 .container {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAGUlEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgA0kQIER6sh6AAAAABJRU5ErkJggg==);
   height: 40rem;
   width: 100%;
   position: relative;
@@ -1323,4 +1324,24 @@ div.services-list li::after {
 
 div.services-list li:last-child::after {
   content: '';
+}
+
+/* floating menu */
+.menu__sec {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--text);
+  padding: 5px 0;
+}
+
+.menu__sec a {
+  position: relative;
+  color: var(--white-text);
+  font-family: 'Poppins';
+  font-size: var(--h4-size);
+  font-weight: 400;
 }
