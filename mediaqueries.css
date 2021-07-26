@@ -220,6 +220,16 @@
       }
 
       .menu__sec {
-        display: none;
+        display: block;
+      }
+
+      .menu__sec div {
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+
+      .menu__sec div:first-child {
+        border-bottom: 0.7px solid var(--white-text);
       }
 }
