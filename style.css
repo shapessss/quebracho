@@ -1348,7 +1348,6 @@ div.services-list li:last-child::after {
 }
 
 .menu__sec a {
-  position: relative;
   color: var(--white-text);
   font-family: 'Poppins';
   font-size: var(--h4-size);
