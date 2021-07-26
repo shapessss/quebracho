@@ -18,13 +18,6 @@ barba.init({
 			reinitTitleScene();
             reinitScripts();
 			reinitModal();
-		},
-		afterLeave() {
-            reinitModal();
-        }
+		}
 	}]
 });
-
-function reinitModal() {
-	$('#modalVideoInteract').remove();
-}
