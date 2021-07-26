@@ -221,6 +221,7 @@
 
       .menu__sec {
         display: block;
+        height: 65px;
       }
 
       .menu__sec div {

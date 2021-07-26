@@ -1335,9 +1335,11 @@ div.services-list li:last-child::after {
   width: 100%;
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: var(--text);
+  height: 30px;
 }
 
 .menu__sec div {
