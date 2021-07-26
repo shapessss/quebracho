@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="mediaqueries.css">
     </head>
 
-    <body>
+    <body data-barba="wrapper">
         <div id="toggle-menu">
             <div class="list-links">
                 <a href="" id="tel">+52 33 2937 1055</a>
@@ -48,51 +48,53 @@
                 </nav>
             </header>
 
-            <div class="small-content-wrap">
-                <div class="small-two">
-                    <h4>Consultas generales</h4>
-                    <p>Cuentanos sobre tu proyecto,queremos ayudarte a hacer esa idea una realidad.</p>
-                    <ul>
-                        <li><a href="#">info@quebracho.mx</a></li>
-                        <li><a href="#">+52 33 2937 1055</a></li>
-                    </ul>
-                    <h4>Social</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                    <h4>Estudio <a href="estudio.html">→</a></h4>
-                    <p>Conoce como trabajanos, nuestra visión y objetivos.</p>
-                </div>
+            <main class="content" data-barba="container" data-barba-namespace="contact">
+                <div class="small-content-wrap">
+                    <div class="small-two">
+                        <h4>Consultas generales</h4>
+                        <p>Cuentanos sobre tu proyecto,queremos ayudarte a hacer esa idea una realidad.</p>
+                        <ul>
+                            <li><a href="#">info@quebracho.mx</a></li>
+                            <li><a href="#">+52 33 2937 1055</a></li>
+                        </ul>
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                        <h4>Estudio <a href="estudio.html">→</a></h4>
+                        <p>Conoce como trabajanos, nuestra visión y objetivos.</p>
+                    </div>
 
-                <div class="small-two">
-                    <h4>Oficina</h4>
-                    <p>
-                        Calle Moscú No. 44
-                        Colonia Americana
-                        <br>
-                        Guadalajara, Jalisco
-                        <br>
-                        México
-                    </p>
-                    <ul>
-                        <li><a href="#">Ver en Google Maps</a></li>
-                    </ul>
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li>Brading</li>
-                        <li>Naming</li>
-                        <li>Registro de marca</li>
-                        <li>Diseño gráfico</li>
-                        <li>Desarrollo Web</li>
-                        <li>IU/UX</li>
-                        <li>Estrategia</li>
-                        <li>Ilustración + Fotografía</li>
-                        <li>Audiovisuales</li>
-                        <li>Diseño de interiores</li>
-                    </ul>
+                    <div class="small-two">
+                        <h4>Oficina</h4>
+                        <p>
+                            Calle Moscú No. 44
+                            Colonia Americana
+                            <br>
+                            Guadalajara, Jalisco
+                            <br>
+                            México
+                        </p>
+                        <ul>
+                            <li><a href="#">Ver en Google Maps</a></li>
+                        </ul>
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li>Brading</li>
+                            <li>Naming</li>
+                            <li>Registro de marca</li>
+                            <li>Diseño gráfico</li>
+                            <li>Desarrollo Web</li>
+                            <li>IU/UX</li>
+                            <li>Estrategia</li>
+                            <li>Ilustración + Fotografía</li>
+                            <li>Audiovisuales</li>
+                            <li>Diseño de interiores</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </main>
 
             <!--<section class="form-content">
                 <form action="https://formspree.io/f/mzbyvwjv" method="POST" id="form">
@@ -144,6 +146,8 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="custom.js"></script>
         <script src="all.js"></script>
     </body>
 </html>

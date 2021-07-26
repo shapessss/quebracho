@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="mediaqueries.css">
     </head>
 
-    <body>
+    <body data-barba="wrapper">
         <div id="toggle-menu">
             <div class="list-links">
                 <a href="" id="tel">+52 33 2937 1055</a>
@@ -47,7 +47,7 @@
                 </nav>
             </header>
 
-            <main class="content">
+            <main class="content" data-barba="container" data-barba-namespace="home">
                 <div class="menu__sec">
                     <a href="#" class="secondary_btn">info@quebracho.mx</a>
                     <a href="#" class="secondary_btn">+52 33 2937 1055</a>
@@ -145,6 +145,8 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="custom.js"></script>
         <script src="all.js"></script>
     </body>
 </html>

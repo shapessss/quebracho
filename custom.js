@@ -1,6 +1,6 @@
 barba.init({
 	transitions: [{
-		name: 'prueba',
+		name: 'fades',
 		leave: function(data){
 			var done = this.async();
 			document.body.classList.add('loading');
