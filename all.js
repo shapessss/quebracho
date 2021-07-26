@@ -109,10 +109,16 @@ currentYear()
 
 // call function
 const telTag = document.getElementById("tel")
+const telephoneTag = document.getElementById("telephone")
 
 telTag.addEventListener("click", function (fork) {
   window.location.href="tel:+52 33 2937 1055"
   fork.preventDefault()
+})
+
+telephoneTag.addEventListener("click", function (knife) {
+  window.location.href="tel:+52 33 2937 1055"
+  knife.preventDefault()
 })
 
 const mailTag = document.getElementById("email")
@@ -121,6 +127,11 @@ const mailsecTag = document.getElementById("email_sec")
 mailsecTag.addEventListener("click", function (pepper) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
   pepper.preventDefault()
+})
+
+mailTag.addEventListener("click", function (onion) {
+  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
+  onion.preventDefault()
 })
 
 
