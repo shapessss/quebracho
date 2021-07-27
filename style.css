@@ -55,6 +55,11 @@
   }
 }
 
+@keyframes rotate {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
 :root {
   --pad: 48px 96px 48px 96px;
   --global-pad: 30px;
@@ -1356,4 +1361,32 @@ div.services-list li:last-child::after {
   font-family: 'Poppins';
   font-size: var(--h4-size);
   font-weight: 400;
+}
+
+/* loading */
+div.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-text);
+  z-index: 9999999;
+
+  transition: opacity 2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.loading img {
+  animation: rotate 2.1s infinite linear;
+  width: 170px;
+  height: 170px;
 }
