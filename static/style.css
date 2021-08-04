@@ -724,12 +724,16 @@ div.item:hover div.item_title {
 
 /* project styles */
 section.project-container {
-  padding: var(--global-pad) var(--global-pad) 0 var(--global-pad);
+  /*padding: var(--global-pad) var(--global-pad) 0 var(--global-pad);*/
   margin-left: auto;
   margin-right: auto;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+}
+
+section.project-container .half__cover {
+  height: 90vh;
 }
 
 section.project-container div {
@@ -743,10 +747,6 @@ div.project__cover {
   overflow: hidden;
   margin-right: auto;
   margin-left: auto
-}
-
-div.half-cover {
-  height: 65vh;
 }
 
 div.project__cover img {
