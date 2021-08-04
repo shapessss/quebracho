@@ -661,6 +661,10 @@ div.studio-work div.item {
   justify-content: center;
 }
 
+div.studio-work > div:first-child, div.studio-work > div:nth-child(2) {
+  margin-top: 0;
+}
+
 div.studio-work > div {
   flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
   /*demo*/
