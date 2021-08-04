@@ -55,12 +55,11 @@
       }
 
       section.project__description figcaption {
-        padding: var(--global-pad) 0;
+        padding: var(--global-pad) 15px;
       }
 
       section.project-container {
         width: 100%;
-        padding: 0 var(--global-pad);
       }
 
       div.about__section section {
