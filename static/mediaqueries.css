@@ -219,14 +219,20 @@
       }
 
       .menu__sec {
-        display: block;
-        height: 65px;
+        text-align: inherit;
+      }
+
+      .menu__sec div:first-child {
+        padding-left: var(--global-pad);
+      }
+
+      .menu__sec div:last-child {
+        text-align: right;
+        padding-right: var(--global-pad);
       }
 
       .menu__sec div {
         width: 100%;
-        padding-bottom: 5px;
-        padding-top: 5px;
       }
 
       div.studio-work > div:nth-child(2) {
