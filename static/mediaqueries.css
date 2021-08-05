@@ -235,10 +235,6 @@
 }
 
 @media (max-width: 960px) {
-    div.studio-work {
-      display: block;
-    }
-
     div.join__us__contact {
       flex-direction: column;
       justify-content: space-evenly;
