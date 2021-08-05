@@ -236,7 +236,7 @@
 
 @media (max-width: 960px) {
     div.studio-work {
-      block
+      display: block;
     }
 
     div.join__us__contact {
