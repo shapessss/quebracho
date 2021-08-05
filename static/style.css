@@ -1205,7 +1205,7 @@ div.small-two ul a:hover {
 div.join__us__contact {
   width: 100%;
   position: relative;
-  height: 200px;
+  height: 120px;
   background-color: var(--text);
   padding: var(--global-pad);
   color: var(--white-text);
