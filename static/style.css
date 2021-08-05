@@ -1198,6 +1198,33 @@ div.small-two ul a:hover {
   text-decoration: underline;
 }
 
+div.join__us__contact {
+  width: 100%;
+  position: relative;
+  height: 200px;
+  background-color: var(--text);
+  padding: var(--global-pad);
+  color: var(--white-text);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: 'Poppins';
+  font-size: var(--h4-size);
+}
+
+div.join__us__contact figcaption {
+  padding: 0;
+}
+
+div.join__us__contact h4 {
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
 div.we-are {
   width: 100%;
   text-align: center;
@@ -1300,7 +1327,7 @@ aside.mainpage-services {
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(240, 77, 13);
+  background-color: #ffffff;
   cursor: default;
 }
 

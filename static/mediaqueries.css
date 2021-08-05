@@ -233,3 +233,18 @@
         margin-top: 15px;
       }
 }
+
+@media (max-width: 960px) {
+    div.join__us__contact {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    div.join__us__contact figcaption {
+      padding: 0 var(--global-pad);
+    }
+
+    div.join__us__contact p {
+      text-align: center;
+  }
+}
