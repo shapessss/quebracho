@@ -1150,6 +1150,7 @@ div.small-content-wrap {
   padding-top: 120px;
   padding-bottom: 120px;
   font-family: 'Poppins';
+  font-size: var(--h4-size);
   color: var(--headers-contact);
 }
 
@@ -1161,7 +1162,8 @@ div.small-two {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
-  margin-right: 6.5%;
+  /* margin-right: 6.5%; */
+  margin-right: 20.5%;
 }
 
 div.small-two:last-child {
@@ -1174,6 +1176,7 @@ div.small-two h4 {
   letter-spacing: 0.5px;
   margin-bottom: 24px;
   text-decoration: underline;
+  font-size: var(--p-size);
 }
 
 div.small-two ul {
