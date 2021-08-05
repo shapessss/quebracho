@@ -340,6 +340,10 @@ video {
   object-fit: cover;
 }
 
+video::-webkit-media-controls {
+  display:none !important;
+}
+
 section.project-thumbnails {
   position: relative;
 }
