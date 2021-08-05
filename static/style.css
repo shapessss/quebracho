@@ -1152,6 +1152,8 @@ div.small-content-wrap {
   font-family: 'Poppins';
   font-size: var(--h4-size);
   color: var(--headers-contact);
+
+  line-height: 1.5;
 }
 
 div.small-content-wrap div {
