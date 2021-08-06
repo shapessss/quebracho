@@ -1391,6 +1391,10 @@ div.services-list li:last-child::after {
   height: 30px;
 }
 
+.hidden__xs {
+  display: none;
+}
+
 .menu__sec div {
   width: 50%;
 }
