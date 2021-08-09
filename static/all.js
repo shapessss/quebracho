@@ -109,7 +109,7 @@ currentYear()
 
 // call function
 const telTag = document.getElementById("tel")
-const telephoneTag = document.getElementById("telephone")
+const telephoneTag = document.querySelector(".telephone")
 
 telTag.addEventListener("click", function (fork) {
   window.location.href="tel:+52 33 2937 1055"
@@ -121,8 +121,8 @@ telephoneTag.addEventListener("click", function (knife) {
   knife.preventDefault()
 })
 
-const mailTag = document.getElementById("email")
 const mailsecTag = document.getElementById("email_sec")
+const mailTag = document.querySelector(".email")
 
 mailsecTag.addEventListener("click", function (pepper) {
   window.location.href="mailto:info@quebracho.mx?subject=I have a project"
