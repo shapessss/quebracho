@@ -921,7 +921,7 @@ aside.about-hero {
 }
 
 div.about-hero-cta {
-  transform: translateY(-50px);
+  transform: translateY(-100px);
 }
 
 div.about-hero-cta figcaption {
