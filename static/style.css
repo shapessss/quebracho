@@ -1405,3 +1405,23 @@ div.services-list li:last-child::after {
   font-size: var(--h4-size);
   font-weight: 400;
 }
+
+/* Popup styles */
+.popup__singup_mail {
+  background: var(--white-text);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  padding: 40px 20px;
+  text-align: center;
+
+  font-size: var(--h4-size);
+
+  z-index: 99999;
+}
+
+.popup__singup_mail span a:hover {
+  text-decoration: underline;
+}
