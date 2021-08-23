@@ -154,3 +154,26 @@ window.addEventListener("resize", function () {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 })
+
+// popup function
+const newsWindow = document.querySelector("div.popup__singup_mail")
+const hideLink = document.querySelector("a.hidden__links__hidden")
+
+dataLayer = [];
+
+if(!localStorage.getItem("newsletter-denied")) {
+  setTimeout(function () {
+    newsWindow.classList.remove("hide")
+  }, 30000);
+} else {
+  dataLayer.push({"event": "newsletter-denied"});
+}
+
+hideLink.addEventListener("click", (make) => {
+  make.preventDefault()
+  newsWindow.classList.add("hide")
+
+  localStorage.setItem("newsletter-denied", true);
+
+  dataLayer.push({"event": "newsletter-denied"});
+})
