@@ -166,11 +166,17 @@
             <img src="static/mailbox-closed.png" width="32px" height="32px">
 
             <figcaption>
-                <p>Join Quebracho newsletter!</p>
-                <p>Create an account and receive some discounts and news.</p>
+                <p>Unete al newsletter de Quebracho</p>
             </figcaption>
 
-            <span>
+            <form name="contact" method="POST" data-netlify="true" action="/">
+                <p>
+                    <input type="email" name="email" placeholder="Email"/>
+                    <button type="submit" class="send__email">Enviar</button>
+                </p>
+            </form>
+
+            <span class="no__thanks_btn">
                 <a href="#" class="hidden__links__hidden">No, gracias.</a>
             </span>
         </div>
