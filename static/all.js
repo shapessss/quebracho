@@ -158,6 +158,7 @@ window.addEventListener("resize", function () {
 // popup function
 const newsWindow = document.querySelector("div.popup__singup_mail")
 const hideLink = document.querySelector("a.hidden__links__hidden")
+const sendButton = document.querySelector("button.send__email")
 
 dataLayer = [];
 
@@ -168,6 +169,15 @@ if(!localStorage.getItem("newsletter-denied")) {
 } else {
   dataLayer.push({"event": "newsletter-denied"});
 }
+
+sendButton.addEventListener("click", (let) => {
+  let.preventDefault()
+  newsWindow.classList.add("hide")
+
+  localStorage.setItem("newsletter-denied", true);
+
+  dataLayer.push({"event": "newsletter-denied"});
+})
 
 hideLink.addEventListener("click", (make) => {
   make.preventDefault()
