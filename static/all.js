@@ -170,8 +170,7 @@ if(!localStorage.getItem("newsletter-denied")) {
   dataLayer.push({"event": "newsletter-denied"});
 }
 
-sendButton.addEventListener("click", (let) => {
-  let.preventDefault()
+sendButton.addEventListener("click", () => {
   newsWindow.classList.add("hide")
 
   localStorage.setItem("newsletter-denied", true);
