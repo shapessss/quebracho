@@ -261,4 +261,8 @@
     div.join__us__contact p {
       text-align: center;
   }
+
+  .popup__singup_mail {
+    width: 340px;
+  }
 }
