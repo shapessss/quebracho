@@ -1202,61 +1202,67 @@ div.small-two ul a:hover {
   text-decoration: underline;
 }
 
-div.join__us__contact {
-  width: 100%;
-  position: relative;
-  height: 120px;
+/* client form */
+div.client__project {
   background-color: var(--text);
-  padding: var(--global-pad);
   color: var(--white-text);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 
   font-family: 'Poppins';
-  font-size: var(--h4-size);
-}
+  font-size: 14px;
 
-div.join__us__contact figcaption {
-  padding: 0;
-}
+  overflow: scroll;
 
-div.join__us__contact h4 {
-  font-weight: 600;
-  border-radius: 3px;
-  padding: 5px 10px;
-}
+  position: fixed;
 
-div.we-are {
+  top: 0;
+  left: -100%;
+
+  height: 100vh;
   width: 100%;
-  text-align: center;
-  line-height: 5.72916666vw;
-  border-bottom: 1px solid var(--text);
-  font-size: 6.5vw;
-  padding: var(--pad);
-  position: relative;
-  transition: background-color 0.2s;
+	margin: auto;
+	padding: 40px;
+
+  transition: left 0.4s ease-in-out;
+
+  z-index: 99;
 }
 
-div.we-are:hover {
-  background-color: var(--text);
+div.client__project.open {
+  left: 0;
+}
+
+div.client__form {
+  max-width: 920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+}
+
+div.inputs_select__btn {
+  margin-top: 24px;
+}
+
+div.inputs_select__btn button {
+  background-color: rgba(0, 0, 0, 0);
   color: var(--white-text);
+  font-size: 18px;
+
+  cursor: pointer;
+
+  border: 0;
+
+  font-family: 'Poppins';
 }
 
-div.contact-headers h2 {
-  padding: var(--global-pad);
-  margin: 0;
-  text-transform: uppercase;
-}
-
-/* Contact form */
 input, textarea {
-  width: 70%;
-  background-color: var(--bg);
-  border: 1px solid var(--text);
-  color: var(--text);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-top: 0;
+  border-bottom: 1px solid var(--white-text);
+  border-right: 0;
+  border-left: 0;
+  color: var(--white-text);
   font-family: 'Poppins';
   font-weight: 400;
   padding: 0 16px 0 16px;
@@ -1265,15 +1271,16 @@ input, textarea {
 label {
   display: block;
   margin: 16px 0 16px 0;
-  font-size: var(--h4-size);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 input {
-  height: 30px;
+  height: 45px;
 }
 
 textarea {
-  height: 200px;
+  height: 75px;
   resize: none;
 }
 
@@ -1321,12 +1328,58 @@ input:focus, textarea:focus {
   outline: none;
 }
 
-button.send__email {
-  height: 30px;
+div.client__welcome {
+  max-width: 550px;
+  font-size: var(--h3-size);
+}
+
+div.join__us__contact {
+  width: 100%;
+  position: relative;
+  height: 120px;
+  background-color: var(--text);
+  padding: var(--global-pad);
+  color: var(--white-text);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: 'Poppins';
+  font-size: var(--h4-size);
+}
+
+div.join__us__contact figcaption {
+  padding: 0;
+}
+
+div.join__us__contact h4 {
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+div.we-are {
+  width: 100%;
+  text-align: center;
+  line-height: 5.72916666vw;
+  border-bottom: 1px solid var(--text);
+  font-size: 6.5vw;
+  padding: var(--pad);
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+div.we-are:hover {
   background-color: var(--text);
   color: var(--white-text);
-  border: none;
-  cursor: pointer;
+}
+
+div.contact-headers h2 {
+  padding: var(--global-pad);
+  margin: 0;
+  text-transform: uppercase;
 }
 
 /* services style main page */

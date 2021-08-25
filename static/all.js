@@ -24,7 +24,7 @@ contentTag.addEventListener("click", function() {
 //})
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two, .menu__sec, .join__us__contact")
+const animatedTags = document.querySelectorAll("h2, button, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two, .menu__sec")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -157,14 +157,19 @@ window.addEventListener("resize", function () {
 
 // popup function
 const clientButton = document.querySelector("div.section__btn")
+const clientForm = document.querySelector("div.client__project")
 const bodyClient = document.querySelector("body")
 
 clientButton.classList.add("hide")
 
 setTimeout(function() {
   clientButton.classList.remove("hide")
-}, 30000)
+}, 3000)
 
 bodyClient.addEventListener("click", function () {
   clientButton.classList.add("hide")
+})
+
+clientButton.addEventListener("click", () => {
+  clientForm.classList.toggle("open")
 })
