@@ -246,6 +246,14 @@
       .hidden__l8 {
         display: none;
       }
+
+      div.sep__section__x1 {
+        flex-direction: column-reverse;
+      }
+
+      div.form__close {
+        margin-bottom: 24px;
+      }
 }
 
 @media (max-width: 960px) {

@@ -156,6 +156,7 @@ window.addEventListener("resize", function () {
 })
 
 // popup function
+const formActivator = document.querySelector("div.form__close")
 const clientButton = document.querySelector("div.section__btn")
 const clientForm = document.querySelector("div.client__project")
 const bodyClient = document.querySelector("body")
@@ -171,5 +172,9 @@ bodyClient.addEventListener("click", function () {
 })
 
 clientButton.addEventListener("click", () => {
+  clientForm.classList.toggle("open")
+})
+
+formActivator.addEventListener("click", () => {
   clientForm.classList.toggle("open")
 })
