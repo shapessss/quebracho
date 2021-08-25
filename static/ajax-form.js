@@ -1,4 +1,4 @@
-const form = document.querySelector("form__v1")
+const form = document.querySelector("form.form__v1")
 
 form.addEventListener("submit", handleSubmit)
 
