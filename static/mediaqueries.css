@@ -254,6 +254,10 @@
       div.form__close {
         margin-bottom: 24px;
       }
+
+      div.section__btn button {
+        font-size: 20px;
+      }
 }
 
 @media (max-width: 960px) {
