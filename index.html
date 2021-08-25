@@ -204,11 +204,70 @@
         </footer>
 
         <div class="section__btn">
-            <button onclick="document.location.href='contacto.html';">
+            <button>
                 <span>Platicanos de tu proyecto →</span>
             </button>
         </div>
 
+        <div class="client__project">
+            <div class="client__project__main">
+                <div class="client__welcome">
+                    <p>¿No estás seguro de como empezar? Platicanos tu idea y nosotros nos encargaremos de diseñar un plan para ti.</p>
+                </div>
+
+                <div class="client__form">
+                    <form name="contact" method="POST" data-netlify="true" class="form__v1">
+                            <div class="inputs__select">
+                                <label>¿Cuál es tu nombre?</label>
+                                <input type="text" name="nombre" placeholder="Nombre y apellido">
+                            </div>
+
+                            <div class="inputs__select">
+                                <label>¿Cuál es el nombre de tu empresa?</label>
+                                <input type="text" name="empresa" placeholder="Nombre completo de tu empresa o negocio">
+                            </div>
+
+                            <div class="inputs__select">
+                                <label>¿Cuál es tú correo electrónico?</label>
+                                <input type="email" name="email" placeholder="user@email.com">
+                            </div>
+
+                            <div class="inputs__select">
+                                <label>¿Cuál es tú número de teléfono?</label>
+                                <input type="text" placeholder="10 dígitos">
+                            </div>
+
+                            <div class="inputs__select">
+                                <label>Servicio</label>
+                                <select id="servicio" name="role[]">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="naming">Naming</option>
+                                    <option value="registro de marca">Registro de marca</option>
+                                    <option value="diseño grafico">Diseño gráfico</option>
+                                    <option value="desarrollo web">Desarrollo Web</option>
+                                    <option value="iu ux">UI/UX</option>
+                                    <option value="estrategia">Estrategia</option>
+                                    <option value="ilustracion fotografia">Ilustración/Fotografía</option>
+                                    <option value="audiovisuales">Audiovisuales</option>
+                                    <option value="diseño interiores">Diseño de interiores</option>
+                                </select>
+                            </div>
+
+                            <div class="inputs__select">
+                                <label>Proyecto</label>
+                                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Háblanos detalladamente de tu idea"></textarea>
+                            </div>
+
+                            <div class="inputs__select inputs_select__btn">
+                                <button type="submit">Enviar</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <script src="static/all.js"></script>
+        <script src="static/ajax-form.js"></script>
     </body>
 </html>
