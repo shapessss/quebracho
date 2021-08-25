@@ -163,7 +163,7 @@ clientButton.classList.add("hide")
 
 setTimeout(function() {
   clientButton.classList.remove("hide")
-}, 45000)
+}, 30000)
 
 bodyClient.addEventListener("click", function () {
   clientButton.classList.add("hide")
