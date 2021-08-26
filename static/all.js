@@ -165,18 +165,18 @@ clientButton.classList.add("hide")
 
 setTimeout(function() {
   clientButton.classList.remove("hide")
-}, 40000)
+}, 40000);
 
 bodyClient.addEventListener("click", function () {
   clientButton.classList.add("hide")
-})
+});
 
 clientButton.addEventListener("click", () => {
   clientForm.classList.toggle("open")
   bodyClient.classList.add("active-body")
-})
+});
 
 formActivator.addEventListener("click", () => {
   clientForm.classList.toggle("open")
   bodyClient.classList.remove("active-body")
-})
+});
