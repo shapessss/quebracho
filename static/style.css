@@ -1232,7 +1232,7 @@ div.client__project.open {
   left: 0;
 }
 
-div.client__form {
+div.client__project__main {
   max-width: 920px;
   width: 100%;
   margin-left: auto;
@@ -1334,7 +1334,10 @@ div.sep__section__x1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 34px;
 }
 
 div.client__welcome {

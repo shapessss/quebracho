@@ -255,6 +255,10 @@
         margin-bottom: 24px;
       }
 
+      div.client__project__main {
+        padding: 0;
+      }
+
       div.section__btn button {
         font-size: 15px;
       }
