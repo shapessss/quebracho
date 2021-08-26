@@ -1507,6 +1507,8 @@ div.section__btn {
   padding-right: 32px;
 
   z-index: 99;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 div.section__btn button {
@@ -1540,5 +1542,5 @@ div.section__btn button {
 .hide {
   display: none;
   z-index: -99;
-  opacity: 1;
+  opacity: 0;
 }
