@@ -1516,14 +1516,13 @@ div.section__btn button {
   margin-bottom: 16px;
   padding: 6px 16px;
   border: 1px solid var(--text);
-  border-radius: 5px;
   box-shadow: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--text);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   color: var(--white-text);
   font-family: 'Poppins', system-ui ,-apple-system, "Roboto", "Helvetica Neue",sans-serif;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
