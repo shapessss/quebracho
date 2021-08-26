@@ -255,6 +255,10 @@
         margin-bottom: 24px;
       }
 
+      div.client__project {
+        padding: 40px var(--global-pad);
+      }
+
       div.client__project__main {
         padding: 0;
       }
