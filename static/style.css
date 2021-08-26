@@ -1540,4 +1540,5 @@ div.section__btn button {
 .hide {
   display: none;
   z-index: -99;
+  opacity: 1;
 }
