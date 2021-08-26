@@ -173,8 +173,10 @@ bodyClient.addEventListener("click", function () {
 
 clientButton.addEventListener("click", () => {
   clientForm.classList.toggle("open")
+  bodyClient.classList.add("active-body")
 })
 
 formActivator.addEventListener("click", () => {
   clientForm.classList.toggle("open")
+  bodyClient.classList.remove("active-body")
 })
