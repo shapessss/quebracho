@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap');
 @font-face {
-  font-family: "Hoefler Text";
+  font-family: 'Hoefler Text';
   src: url('static/HoeflerText.woff2') format('woff2'), url('static/HoeflerText.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -135,7 +135,7 @@ html {
 }
 
 body {
-  font-family: Hoefler Text, Arial;
+  font-family: 'Hoefler Text', Arial;
   font-size: var(--p-size);
   line-height: 1.25;
 
@@ -290,7 +290,7 @@ nav a {
   margin: 0 16px 0 0;
 }
 
-div.lang-link, nav.right-nav {
+nav.right-nav {
   font-size: var(--nav-size);
 }
 
@@ -302,19 +302,30 @@ nav.right-nav ul p {
   margin: 0;
 }
 
-div.lang-link a, nav a {
+nav a {
   text-transform: uppercase;
   margin: 0;
 }
 
-div.lang-link a:first-child:after {
-  content: "/";
-  color: var(--text);
-  margin-left: 3px;
-}
-
 nav, nav.right-nav {
   flex: 1;
+}
+
+div.button__arrow {
+  width: 35px;
+  height: 35px;
+  background-image: url(info.svg);
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  cursor: pointer;
+  float: right;
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+div.button__arrow:hover {
+  opacity: 0.5;
 }
 
 .container {

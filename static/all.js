@@ -160,6 +160,12 @@ const formActivator = document.querySelector("div.form__close")
 const clientButton = document.querySelector("div.section__btn")
 const clientForm = document.querySelector("div.client__project")
 const bodyClient = document.querySelector("body")
+const infoClicker = document.querySelector("div.button__arrow")
+
+infoClicker.addEventListener("click", (infos) => {
+  infos.preventDefault()
+  clientForm.classList.toggle("open")
+});
 
 clientButton.classList.add("hide")
 
