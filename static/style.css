@@ -312,10 +312,10 @@ nav, nav.right-nav {
 }
 
 div.button__arrow {
-  width: 35px;
-  height: 35px;
-  background-image: url(info.svg);
-  background-size: 30px auto;
+  width: 30px;
+  height: 30px;
+  background-image: url(chat-right-dots-fill.svg);
+  background-size: 20px auto;
   background-repeat: no-repeat;
   background-position: 50%;
   cursor: pointer;
