@@ -24,7 +24,7 @@ contentTag.addEventListener("click", function() {
 //})
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, .btn__opacity, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two, .menu__sec")
+const animatedTags = document.querySelectorAll("h2, .btn__opacity, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two, .menu__sec, a.section__btn")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -157,9 +157,7 @@ window.addEventListener("resize", function () {
 
 // popup function
 const formActivator = document.querySelector("div.form__close")
-const clientButton = document.querySelector("div.section__btn")
 const clientForm = document.querySelector("div.client__project")
-const bodyClient = document.querySelector("body")
 const infoClicker = document.querySelector("div.button__arrow")
 
 infoClicker.addEventListener("click", (infos) => {
@@ -167,22 +165,6 @@ infoClicker.addEventListener("click", (infos) => {
   clientForm.classList.toggle("open")
 });
 
-clientButton.classList.add("hide")
-
-setTimeout(function() {
-  clientButton.classList.remove("hide")
-}, 40000);
-
-bodyClient.addEventListener("click", function () {
-  clientButton.classList.add("hide")
-});
-
-clientButton.addEventListener("click", () => {
-  clientForm.classList.toggle("open")
-  bodyClient.classList.add("active-body")
-});
-
 formActivator.addEventListener("click", () => {
   clientForm.classList.toggle("open")
-  bodyClient.classList.remove("active-body")
 });

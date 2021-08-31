@@ -875,7 +875,7 @@ img.prev:hover {
 
 .slides h4 {
   position: fixed;
-  bottom: 0;
+  bottom: 50px;
   left: 0;
   justify-content: center;
   align-items: center;
@@ -1505,51 +1505,28 @@ div.services-list li:last-child::after {
 }
 
 /* Popup styles */
-div.section__btn {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
+a.section__btn {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  background: var(--text);
+  padding: 15px var(--global-pad);
+  color: var(--white-text);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: var(--h4-size);
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  padding-left: 32px;
-  padding-right: 32px;
-
+  bottom: 0;
+  left: 0;
+  text-align: right;
   z-index: 99;
 }
 
-div.section__btn button {
-  display: flex;
-
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 16px;
-  padding: 6px 16px;
-  border: 1px solid var(--text);
-  box-shadow: none;
-  background-color: var(--text);
-  -webkit-backdrop-filter: blur(25px);
-  backdrop-filter: blur(25px);
-  color: var(--white-text);
-  font-family: 'Poppins', system-ui ,-apple-system, "Roboto", "Helvetica Neue",sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 32px;
-  padding-right: 32px;
-  max-width: 550px;
-  align-items: center;
-
-  cursor: pointer;
-}
-
-div.section__btn.hide {
+a.section__btn.hide {
   display: none;
   z-index: -99;
   opacity: 0;
+}
+
+div#N_fixedBottom {
+  transition: opacity 0.2s linear;
 }
