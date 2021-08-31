@@ -1360,7 +1360,7 @@ div.form__close {
   width: 30px;
   height: 30px;
   background-image: url(close.svg);
-  background-size: 20px auto;
+  /* background-size: 20px auto; */
   background-repeat: no-repeat;
   background-position: 50%;
   cursor: pointer;
