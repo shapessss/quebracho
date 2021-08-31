@@ -4,7 +4,7 @@ clientButton.classList.add("hide")
 
 setTimeout(function() {
   clientButton.classList.remove("hide")
-}, 40000);
+}, 3000);
 
 clientButton.addEventListener("click", (y) => {
   y.preventDefault()

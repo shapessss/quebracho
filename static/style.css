@@ -1523,10 +1523,8 @@ a.section__btn {
 
 a.section__btn.hide {
   display: none;
-  z-index: -99;
-  opacity: 0;
 }
 
-div#N_fixedBottom {
+#N_fixedBottom {
   transition: opacity 0.2s linear;
 }
