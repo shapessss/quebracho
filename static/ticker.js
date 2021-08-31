@@ -18,5 +18,6 @@ $(window).scroll(function() {
       fixedBottom.css("zIndex", '-99' );
   } else {
       fixedBottom.css("opacity", 1 );
+      fixedBottom.css("zIndex", '99' );
   }
 });
