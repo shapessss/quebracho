@@ -15,6 +15,7 @@ $(window).scroll(function() {
   var fixedBottom = $("#N_fixedBottom");
   if ($('body').height() <= ($(window).height() + $(window).scrollTop())) {
       fixedBottom.css("opacity", 0 );
+      fixedBottom.css("zIndex", '-99' );
   } else {
       fixedBottom.css("opacity", 1 );
   }
