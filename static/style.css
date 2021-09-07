@@ -753,7 +753,7 @@ section.project-container .half__cover {
 }
 
 section.project-container div {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 div.project__cover {
@@ -780,11 +780,11 @@ div.project__x1 {
 }
 
 div.project__x1 div.left {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 div.project__x1 div.right {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 figcaption.small {
