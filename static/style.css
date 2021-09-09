@@ -770,6 +770,7 @@ div.project__cover img {
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  padding-bottom: 5px;
 }
 
 div.project__x1 {
