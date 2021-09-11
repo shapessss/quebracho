@@ -37,7 +37,7 @@ const fadeIn = function () {
     
     
     if (tagTop < window.innerHeight) {
-      tag.style.animation = "fadeIn 0.5s 0.5s both"
+      tag.style.animation = "fadeIn 0.3s 0.5s both"
     }
   })
 }
