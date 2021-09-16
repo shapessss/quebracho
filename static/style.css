@@ -1,13 +1,5 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url("base.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap');
-@font-face {
-  font-family: 'Hoefler Text';
-  src: url('static/HoeflerText.woff2') format('woff2'), url('static/HoeflerText.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 @keyframes fadeIn {
@@ -135,7 +127,7 @@ html {
 }
 
 body {
-  font-family: 'Hoefler Text', Arial;
+  font-family: "Hoefler Text Pro", Arial;
   font-size: var(--p-size);
   line-height: 1.25;
 
@@ -800,6 +792,14 @@ figcaption.small a:hover, div.full-text a:hover {
 
 div.full-text h3.full-text-center {
   display: none;
+}
+
+section.project__description figcaption {
+  max-width: 45em;
+}
+
+section.project__description figcaption p {
+  line-height: 1.4;
 }
 
 /*About page styles */
@@ -1528,4 +1528,11 @@ a.section__btn.hide {
 
 #N_fixedBottom {
   transition: opacity 0.1s linear;
+}
+
+.project__tags {
+  font-family: 'Crimson Text';
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--h2-size);
 }

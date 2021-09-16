@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+
 @font-face {
-    font-family: "Hoefler Text";
-    src: url('HoeflerText.woff2') format('woff2'), url('HoeflerText.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Hoefler Text Pro";
+  src: url(HoeflerText.woff2), url(HoeflerText.woff);
+}
+
+@font-face {
+  font-family: "Maison Neue Book";
+  src: url(static/maison-neue-book.woff);
+}
+
+@font-face {
+  font-family: "Voyage Regular";
+  src: url(static/voyage-regular.otf);
+}
 
 @font-face {
   font-family: "Neue Haas";
