@@ -285,4 +285,16 @@
   .popup__singup_mail {
     width: 340px;
   }
+
+  div.project__x1 {
+    flex-direction: column;
+  }
+
+  div.project__x1 div.left {
+    padding-right: 0;
+  }
+
+  div.project__x1 div.right {
+    padding-left: 0;
+  }
 }
