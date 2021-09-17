@@ -292,6 +292,11 @@
 
   div.project__x1 div.left {
     padding-right: 0;
+    padding-bottom: 5px;
+  }
+
+  div.project__x1 div.left img {
+    padding-bottom: 5px;
   }
 
   div.project__x1 div.right {
