@@ -1531,8 +1531,11 @@ a.section__btn.hide {
 }
 
 .project__tags {
-  font-family: 'Crimson Text';
+  font-family: 'Playfair Display';
   font-weight: 400;
   font-style: italic;
   font-size: var(--h2-size);
+  padding-left: 10px;
+  margin: 0 0 48px 0;
+  color: rgba(108, 122, 137, 1);
 }
