@@ -135,6 +135,8 @@ body {
   color: var(--text);
   padding-bottom: 80px;
   -webkit-font-smoothing: antialiased;
+
+  overflow-x: hidden;
 }
 
 body.no-padding {
