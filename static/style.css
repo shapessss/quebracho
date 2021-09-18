@@ -145,7 +145,7 @@ body.no-padding {
 }
 
 body.active-body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 div.page {
