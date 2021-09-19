@@ -256,7 +256,7 @@
       }
 
       div.client__project {
-        padding: 40px var(--global-pad);
+        padding: 40px var(--global-pad) 80px var(--global-pad);
       }
 
       div.client__project__main {
