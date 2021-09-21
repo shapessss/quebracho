@@ -1532,9 +1532,8 @@ a.section__btn.hide {
 }
 
 .project__tags {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  font-style: italic;
+  font-family: 'Mulish';
+  font-weight: 300;
   font-size: var(--h2-size);
   padding-left: 10px;
   margin: 0 0 48px 0;
