@@ -9,27 +9,67 @@
 
 <url>
   <loc>https://www.quebracho.mx/</loc>
-  <lastmod>2021-08-09T20:37:18+00:00</lastmod>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.quebracho.mx/estudio</loc>
-  <lastmod>2021-08-09T20:37:18+00:00</lastmod>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.quebracho.mx/portfolio</loc>
-  <lastmod>2021-08-09T20:37:18+00:00</lastmod>
+  <loc>https://www.quebracho.mx/portafolio</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.quebracho.mx/contacto</loc>
-  <lastmod>2021-08-09T20:37:18+00:00</lastmod>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.quebracho.mx/project</loc>
-  <lastmod>2021-08-09T20:37:18+00:00</lastmod>
+  <loc>https://www.quebracho.mx/hom</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/brival</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/internet-public-radio</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/casa-fika</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/dilemme</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/black-tree-chilli</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/sticks-and-stones</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/mexicstock</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.quebracho.mx/wellby</loc>
+  <lastmod>2021-09-21T00:21:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
