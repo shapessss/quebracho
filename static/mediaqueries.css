@@ -266,6 +266,10 @@
       div.section__btn button {
         font-size: 15px;
       }
+
+      section.project-container .half__cover {
+        height: 30vh;
+      }
 }
 
 @media (max-width: 960px) {
