@@ -1425,7 +1425,7 @@ div.contact-headers h2 {
 
 /* services style main page */
 aside.mainpage-services {
-  height: 620px;
+  height: auto;
   padding: 64px 48px 64px 48px;
   display: flex;
   display: -webkit-flex;
