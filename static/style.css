@@ -77,6 +77,7 @@
   --h2-size: 40px;
   --h3-size: 18px;
   --h4-size: 14px;
+  --mobile-size: 16px;
   --nav-size: 16px;
   --p-size: 24px;
   --secheader-size: 12px;
@@ -788,6 +789,21 @@ figcaption.small {
 }
 
 figcaption.small a:hover, div.full-text a:hover {
+  text-decoration: underline;
+}
+
+section.project__description div.list__credits {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 5px 25px;
+}
+
+div.list__credits span {
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--h3-size);
+}
+
+div.list__credits span a:hover {
   text-decoration: underline;
 }
 
@@ -1532,10 +1548,12 @@ a.section__btn.hide {
 }
 
 .project__tags {
-  font-family: 'Mulish';
-  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   font-size: var(--h2-size);
-  padding-left: 10px;
-  margin: 0 0 48px 0;
-  color: rgba(108, 122, 137, 1);
+  color: #222222;
+}
+
+.project__tags, section.project__description figcaption p {
+  margin: 0 0 95px 0;
 }

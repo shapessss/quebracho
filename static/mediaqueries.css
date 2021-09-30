@@ -270,6 +270,20 @@
       section.project-container .half__cover {
         height: 30vh;
       }
+
+      .project__tags, section.project__description figcaption p {
+        margin: 0 0 60px 0;
+      }
+
+      section.project__description figcaption p {
+        font-size: var(--mobile-size);
+        line-height: 1.7;
+      }
+
+      h2.project__tags {
+        font-size: 24px;
+        line-height: 1.5;
+      }
 }
 
 @media (max-width: 960px) {
