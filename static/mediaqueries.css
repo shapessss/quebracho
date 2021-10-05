@@ -284,6 +284,14 @@
         font-size: 24px;
         line-height: 1.5;
       }
+
+      div.container {
+        height: 20rem;
+      }
+
+      div.hero {
+        width: 100px;
+      }
 }
 
 @media (max-width: 960px) {
@@ -319,5 +327,9 @@
 
   div.project__x1 div.right {
     padding-left: 0;
+  }
+
+  div.container video {
+    width: 100px;
   }
 }
