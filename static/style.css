@@ -817,6 +817,8 @@ section.project__description figcaption {
 
 section.project__description figcaption p {
   line-height: 1.4;
+  text-align: justify;
+  text-justify: distribute;
 }
 
 /*About page styles */
