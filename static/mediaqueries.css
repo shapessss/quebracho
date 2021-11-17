@@ -55,7 +55,10 @@
       }
 
       section.project__description figcaption {
-        padding: var(--global-pad) 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: var(--global-pad);
+        padding-right: var(--global-pad);
       }
 
       section.project-container {
@@ -267,8 +270,8 @@
         font-size: 15px;
       }
 
-      .project__tags, section.project__description figcaption p {
-        margin: 0 0 78px 0;
+      section.project__description {
+        padding: 35px 0;
       }
 
       section.project__description figcaption p {
