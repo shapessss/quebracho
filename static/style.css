@@ -817,8 +817,8 @@ figcaption.small a:hover, div.full-text a:hover {
 }
 
 section.project__description div.list__credits {
-  display: grid;
-  grid-gap: 32px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 div.list__credits {
@@ -828,6 +828,10 @@ div.list__credits {
 
 div.list__credits span a:hover {
   text-decoration: underline;
+}
+
+div.__credit {
+  margin-bottom: 32px;
 }
 
 div.__credit h4 {
