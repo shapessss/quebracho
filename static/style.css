@@ -117,7 +117,11 @@
   }
 
   section.project__description figcaption div.head__credits div.list__credits {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   div.head__credits div.list__credits div.__credit {
@@ -848,7 +852,7 @@ div.markdown {
   grid-template-columns: repeat(12, 1fr);
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
-  gap: 32px 32px;
+  gap: 0 32px;
 }
 
 div.markdown p {
@@ -1613,7 +1617,7 @@ div.head__credits div.individual__tag {
 }
 
 div.list__credits {
-  grid-column: 9 / span 3;
+  grid-column: 10 / span 3;
 }
 
 .project__tags {
@@ -1625,5 +1629,5 @@ div.list__credits {
 }
 
 figcaption .head__credits, .section.project__description figcaption p {
-  margin: 0 0 95px 0;
+  margin: 0 0 60px 0;
 }
