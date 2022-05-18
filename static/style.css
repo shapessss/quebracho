@@ -334,12 +334,6 @@ nav, nav.right-nav {
 }
 
 div.button__arrow {
-  width: 30px;
-  height: 30px;
-  background-image: url(chat-right-dots-fill.svg);
-  background-size: 20px auto;
-  background-repeat: no-repeat;
-  background-position: 50%;
   cursor: pointer;
   float: right;
   opacity: 1;
@@ -351,6 +345,21 @@ div.button__arrow {
 
 div.button__arrow:hover {
   opacity: 0.5;
+}
+
+div.button__arrow span {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+div.button__arrow::before {
+  content: '';
+  display: block;
+  height: 30px;
+  background-image: url(chat-right-dots-fill.svg);
+  background-size: 20px auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .container {
