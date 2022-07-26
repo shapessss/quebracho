@@ -1684,6 +1684,16 @@ figcaption .head__credits, .section.project__description figcaption p {
     font-size: 4.5vmin;
   }
 
+  .xmodal {
+    right: 40px;
+    min-width: 180px;
+  }
+
+  .xmodal a {
+    font-size: 14px;
+    line-height: 2;
+  }
+
   .pop {
     right: 40px;
   }
