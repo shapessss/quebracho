@@ -1489,6 +1489,7 @@ div.services-list li:last-child::after {
   left: 0;
   width: 100vw;
   padding: 12px 0;
+  overflow-x: hidden;
 }
 
 .gsap-text a {
