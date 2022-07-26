@@ -24,7 +24,7 @@ contentTag.addEventListener("click", function() {
 //})
 
 // text animation script
-const animatedTags = document.querySelectorAll("h2, .btn__opacity, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two, .menu__sec")
+const animatedTags = document.querySelectorAll("h2, .btn__opacity, section.project__description figcaption, h1.animate_this, nav.about-nav, .small-two")
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -99,6 +99,13 @@ document.addEventListener("scroll", function () {
   }
 })
 
+// Open link on click button
+const portfolioButton = document.querySelector('#to-portfolio');
+
+portfolioButton.addEventListener("click", () => {
+  window.open("https://www.quebracho.mx/portafolio")
+});
+
 // Copyright date to current year
 function currentYear() {
   const d = new Date()
@@ -106,45 +113,6 @@ function currentYear() {
   document.getElementById('copyright').innerHTML = '&copy; Quebracho ' + n
 }
 currentYear()
-
-// call function
-const telTag = document.getElementById("tel")
-const telephoneTag = document.querySelector(".telephone")
-const telephoneTagxs = document.querySelector(".telephone__xs")
-
-telTag.addEventListener("click", function (fork) {
-  window.location.href="tel:+52 33 2937 1055"
-  fork.preventDefault()
-})
-
-telephoneTag.addEventListener("click", function (knife) {
-  window.location.href="tel:+52 33 2937 1055"
-  knife.preventDefault()
-})
-
-telephoneTagxs.addEventListener("click", function (spoon) {
-  window.location.href="tel:+52 33 2937 1055"
-  spoon.preventDefault()
-})
-
-const mailsecTag = document.getElementById("email_sec")
-const mailTag = document.querySelector(".email")
-const mailTagxs = document.querySelector(".email__xs")
-
-mailsecTag.addEventListener("click", function (pepper) {
-  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
-  pepper.preventDefault()
-})
-
-mailTag.addEventListener("click", function (onion) {
-  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
-  onion.preventDefault()
-})
-
-mailTagxs.addEventListener("click", function (grape) {
-  window.location.href="mailto:info@quebracho.mx?subject=I have a project"
-  grape.preventDefault()
-})
 
 
 let vh = window.innerHeight * 0.01;
@@ -156,9 +124,9 @@ window.addEventListener("resize", function () {
 })
 
 // popup function
-const formActivator = document.querySelector("div.form__close")
-const clientForm = document.querySelector("div.client__project")
-const infoClicker = document.querySelector("div.button__arrow")
+const formActivator = document.querySelector("div.form__close");
+const clientForm = document.querySelector("div.client__project");
+const infoClicker = document.querySelector("#to-talk");
 
 infoClicker.addEventListener("click", (infos) => {
   infos.preventDefault()
@@ -167,4 +135,18 @@ infoClicker.addEventListener("click", (infos) => {
 
 formActivator.addEventListener("click", () => {
   clientForm.classList.toggle("open")
+});
+
+// Modal Contact
+const modalAction = document.querySelector(".pop a")
+const modalWindow = document.querySelector(".xmodal")
+
+modalAction.addEventListener("click", (a) => {
+  a.preventDefault();
+  modalWindow.classList.toggle("fade-in");
+  // if (modalWindow.classList.contains("fade-in")) {
+  //   modalWindow.classList.remove("fade-in")
+  // } else {
+  //   modalWindow.classList.add("fade-in")
+  // }
 });
