@@ -358,7 +358,7 @@ nav li:not(:first-of-type) {
   margin-left: 20px;
 }
 
-nav li a {
+nav li a, #toggle-activator {
   font-size: var(--nav-size);
   font-family: 'Poppins';
   font-weight: 400;
