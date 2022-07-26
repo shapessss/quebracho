@@ -204,16 +204,16 @@ body.active-body {
 
 /* Canvas div */
 .canvas-holder canvas {
-  width: 100vh;
-  height: 100vh;
+  width: max(100vh, calc(100vw + 600px));
+  height: max(100vh, calc(100vw + 600px));
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  transform: translate(calc(-50% - 150px), -50%);
+  -webkit-transform: translate(calc(-50% - 150px), -50%);
+  -moz-transform: translate(calc(-50% - 150px), -50%);
+  -ms-transform: translate(calc(-50% - 150px), -50%);
+  -o-transform: translate(calc(-50% - 150px), -50%);
   z-index: -1;
 }
 /* Canvas div */
@@ -1682,6 +1682,10 @@ figcaption .head__credits, .section.project__description figcaption p {
 
   .canvas-holder .hero p {
     font-size: 4.5vmin;
+  }
+
+  .pop {
+    right: 40px;
   }
 }
 

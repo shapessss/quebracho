@@ -1,22 +1,23 @@
 const canvas = document.querySelector("canvas");
 const sandbox = new GlslCanvas(canvas);
 
-const sizer = function () {
-  const dpi = window.devicePixelRatio
-  const w = window.innerWidth
-	const h = window.innerHeight
+const calcSize = function () {
+    let s = Math.max(window.innerHeight, window.innerWidth + 600)
+    let dpi = window.devicePixelRatio
   
-  const s = Math.max(w, h)
-
-	canvas.width = s * dpi
-	canvas.height = s * dpi
-  canvas.style.width = s + "px"
-  canvas.style.height = s + "px"
-}
-
-sizer()
-window.addEventListener("resize", function() {
-  sizer()
+    if (window.innerWidth < 640) {
+      s = window.innerWidth
+    }
+    
+    canvas.width = s * dpi
+      canvas.height = s * dpi
+    canvas.style.width = s + "px"
+    canvas.style.height = s + "px"
+  }
+  
+  calcSize()
+  window.addEventListener("resize", function () {
+    calcSize()
 })
 
 sandbox.load(frag);
