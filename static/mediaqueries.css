@@ -201,15 +201,11 @@
       }
 
       aside.mainpage-services {
-        height: auto;
+        height: 100vh;
       }
 
       div.services-list li {
-        font-size: calc(1.21995rem + 1.83753vw);
-      }
-
-      div.services-list ul {
-        line-height: 1.3;
+        font-size: calc(1.21995rem + 0.83753vw);
       }
 
       .slides {

@@ -99,13 +99,6 @@ document.addEventListener("scroll", function () {
   }
 })
 
-// Open link on click button
-const portfolioButton = document.querySelector('#to-portfolio');
-
-portfolioButton.addEventListener("click", () => {
-  window.open("https://www.quebracho.mx/portafolio")
-});
-
 // Copyright date to current year
 function currentYear() {
   const d = new Date()
@@ -126,9 +119,9 @@ window.addEventListener("resize", function () {
 // popup function
 const formActivator = document.querySelector("div.form__close");
 const clientForm = document.querySelector("div.client__project");
-const infoClicker = document.querySelector("#to-talk");
+const infoClickerToggle = document.querySelector("#to-talk-home");
 
-infoClicker.addEventListener("click", (infos) => {
+infoClickerToggle.addEventListener("click", (infos) => {
   infos.preventDefault()
   clientForm.classList.toggle("open")
 });
