@@ -133,6 +133,7 @@ body.active-body {
   height: calc(100vh - 90px);
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 .canvas-holder .hero {
@@ -1754,17 +1755,6 @@ figcaption .head__credits, .section.project__description figcaption p {
   }
 }
 
-@media (max-width: 768px) {
-  canvas {
-    display: none;
-    z-index: 2;
-  }
-
-  .video {
-    display: block;
-  }
-}
-
 @media (max-width: 820px) {
   .canvas-holder .action-buttons {
     display: none;
@@ -1772,6 +1762,15 @@ figcaption .head__credits, .section.project__description figcaption p {
 
   .canvas-holder .hero {
     min-width: 220px;
+  }
+
+  .canvas-holder canvas {
+    display: none;
+    z-index: -2;
+  }
+
+  .video {
+    display: block;
   }
 }
 
@@ -1798,15 +1797,4 @@ figcaption .head__credits, .section.project__description figcaption p {
     height: 100vw;
     padding: 0;
   }
-
-  .canvas-holder canvas {
-    width: 100vw;
-    height: 100vw;
-    position: static;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-}
 }
