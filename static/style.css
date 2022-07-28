@@ -125,7 +125,7 @@ body.no-padding {
 }
 
 body.active-body {
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Canvas holder */
@@ -273,7 +273,7 @@ div.page {
   height: 100vh;
 }
 
-div.page.blured {
+/* div.page.blured {
   filter: blur(3px) brightness(0.8);
   -webkit-filter: blur(3px) brightness(0.8);
   -moz-filter: blur(3px) brightness(0.8);
@@ -285,7 +285,7 @@ div.page.blured {
   perspective: 1000;
   transform: translate3d(0,0,0);
   transform: translateZ(0);
-}
+} */
 
 div.page.no-overflow {
   overflow: hidden;

@@ -6,14 +6,14 @@ const pageTag = document.querySelector(".page")
 toggleTag.addEventListener("click", function (delta) {
     contentTag.classList.toggle("active")
     bodyOverflow.classList.add("active-body")
-    pageTag.classList.add("blured")
+    // pageTag.classList.add("blured")
     delta.preventDefault()
 })
 
 contentTag.addEventListener("click", function() {
   contentTag.classList.toggle("active")
   bodyOverflow.classList.remove("active-body")
-  pageTag.classList.remove("blured")
+  // pageTag.classList.remove("blured")
 })
 
 //fullCloser.addEventListener("click", function() {
