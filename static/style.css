@@ -1464,6 +1464,7 @@ div.contact-headers h2 {
 
 /* services style main page */
 aside.mainpage-services {
+  position: relative;
   height: 100vmin;
   padding: 64px;
   display: flex;
@@ -1521,13 +1522,12 @@ div.services-list li {
   font-size: calc(1.45995rem + 2.83753vw);
   font-family: 'Poppins';
   font-weight: 600;
-  transition: opacity 0.2s;
   cursor: pointer;
 }
 
-div.services-list li:hover {
+/* div.services-list li:hover {
   opacity: 0.5;
-}
+} */
 
 div.services-list li::after {
   content: ',';
@@ -1619,6 +1619,38 @@ div.list__credits {
 
 figcaption .head__credits, .section.project__description figcaption p {
   margin: 0 0 60px 0;
+}
+
+.service:hover .image_project {
+  opacity: 1;
+}
+
+.service-link:hover {
+  transition: opacity .2s linear;
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -ms-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+}
+
+.service-link:hover {
+  opacity: 0.5;
+}
+
+.image_project {
+  width: 260px;
+  display: inline-block;
+  display: flex;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  max-width: 620px;
+  pointer-events: none;
+  word-break: break-all;
+  transition: opacity .3s;
 }
 
 /* Fixed content */
@@ -1777,11 +1809,21 @@ figcaption .head__credits, .section.project__description figcaption p {
     --h1-about: 45px;
   }
 
+  .image_project {
+    width: 174px;
+  }
+
   header .for-mobile {
     display: block;
   }
 
   header .for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .image_project {
     display: none;
   }
 }

@@ -116,30 +116,11 @@ window.addEventListener("resize", function () {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 })
 
-// popup function
-const formActivator = document.querySelector("div.form__close");
-const clientForm = document.querySelector("div.client__project");
-const infoClickerToggle = document.querySelector("#to-talk-home");
-
-infoClickerToggle.addEventListener("click", (infos) => {
-  infos.preventDefault()
-  clientForm.classList.toggle("open")
-});
-
-formActivator.addEventListener("click", () => {
-  clientForm.classList.toggle("open")
-});
-
 // Modal Contact
-const modalAction = document.querySelector(".pop a")
-const modalWindow = document.querySelector(".xmodal")
+// const modalAction = document.querySelector(".pop a")
+// const modalWindow = document.querySelector(".xmodal")
 
-modalAction.addEventListener("click", (a) => {
-  a.preventDefault();
-  modalWindow.classList.toggle("fade-in");
-  // if (modalWindow.classList.contains("fade-in")) {
-  //   modalWindow.classList.remove("fade-in")
-  // } else {
-  //   modalWindow.classList.add("fade-in")
-  // }
-});
+// modalAction.addEventListener("click", (a) => {
+//   a.preventDefault();
+//   modalWindow.classList.toggle("fade-in");
+// });
